@@ -18,6 +18,21 @@ import type {
 import { attributeSimilarity } from './constants';
 import { buildPartnerSentence } from './partnerRule';
 
+function hasBatchim(text: string) {
+  const value = text.trim();
+  if (!value) return false;
+  const code = value.charCodeAt(value.length - 1);
+  return code >= 0xac00 && code <= 0xd7a3 ? (code - 0xac00) % 28 !== 0 : false;
+}
+
+function withSubjectParticle(text: string) {
+  return `${text}${hasBatchim(text) ? '이' : '가'}`;
+}
+
+function withAndParticle(text: string) {
+  return `${text}${hasBatchim(text) ? '과' : '와'}`;
+}
+
 function personaFor(candidate: WeddingBandCandidate) {
   const familyNames: Record<WeddingBandCandidate['family'], string> = {
     classic: '매일 손이 가는 클래식 밴드파',
@@ -38,12 +53,12 @@ function descriptionFor(candidate: WeddingBandCandidate) {
   const width = bandWidthLabels[candidate.attributes.bandWidth];
   const finish = surfaceFinishLabels[candidate.attributes.surfaceFinish];
   const diamond = diamondLayoutLabels[candidate.attributes.diamondLayout];
-  return `${tone}의 ${width}에 ${finish}과 ${diamond}가 어우러진, 실제로 매일 착용하기 좋은 취향이에요.`;
+  return `${tone}의 ${width}에 ${withAndParticle(finish)} ${withSubjectParticle(diamond)} 어우러진, 실제로 매일 착용하기 좋은 취향이에요.`;
 }
 
 function buildStoreSentence(candidate: WeddingBandCandidate, dislikes: string[]) {
   const a = candidate.attributes;
-  const base = `${metalToneLabels[a.metalTone]} 계열의 ${bandWidthLabels[a.bandWidth]} 밴드에, ${surfaceFinishLabels[a.surfaceFinish]} 표면과 ${diamondLayoutLabels[a.diamondLayout]}가 들어간 ${motifLabels[a.motif]} 디자인을 먼저 보고 싶어요.`;
+  const base = `${metalToneLabels[a.metalTone]} 계열의 ${bandWidthLabels[a.bandWidth]} 밴드에, ${surfaceFinishLabels[a.surfaceFinish]} 표면과 ${withSubjectParticle(diamondLayoutLabels[a.diamondLayout])} 들어간 ${motifLabels[a.motif]} 디자인을 먼저 보고 싶어요.`;
   return dislikes.length ? `${base} ${dislikes.slice(0, 2).join(' 또는 ')} 느낌은 우선 제외하고 싶어요.` : base;
 }
 
