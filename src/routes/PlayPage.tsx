@@ -105,7 +105,7 @@ export function PlayPage() {
 
   return <MobileShell><div className="page has-sticky-header play-page">
     <ProgressHeader title={`${session.tournament.roundSize}강`} current={Math.min(session.tournament.currentMatchIndex + 1, roundMatches)} total={roundMatches} onBack={session.tournament.history.length ? undoMatch : () => nav('/')} />
-    <section className="question-head tournament-head"><strong>{session.tournament.roundSize}강 · {session.tournament.currentMatchIndex + 1}/{roundMatches}</strong><p>{copy.tournament.helper}</p></section>
+    <section className="question-head tournament-head"><p>{copy.tournament.helper}</p></section>
     <ComparisonGrid a={{src:left.assets.packshot,attributes:left.attributes}} b={{src:right.assets.packshot,attributes:right.attributes}} onA={() => pickTournament(left.id,'a')} onB={() => pickTournament(right.id,'b')} selected={selected === 'a' ? 'a' : selected === 'b' ? 'b' : undefined} disabled={locked}/>
     <p className="comparison-note">제품명이나 가격 대신 전체 인상만 보고 골라보세요.</p>
     {transition && <div className="round-transition" role="status"><span>◇</span><strong>{transition}</strong></div>}
