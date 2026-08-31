@@ -11,7 +11,7 @@ describe('preference engine', () => {
     expect(profile.metalTone.values.find((value) => value.value === 'champagne')!.exposures).toBeGreaterThan(
       profile.metalTone.values.find((value) => value.value === 'silver')!.exposures,
     );
-    expect(profile.bandWidth.topValue).toBe('medium');
+    expect(profile.bandWidth.topValue).toBe('slim');
     expect(profile.diamondLayout.values.find((value) => value.value === 'none')!.wins).toBeGreaterThan(0);
   });
 
