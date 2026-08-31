@@ -20,7 +20,7 @@ export function PlayPage() {
   const [selected, setSelected] = useState<'a'|'b'|'neutral'>();
   const [locked, setLocked] = useState(false);
   const [transition, setTransition] = useState<string>();
-  const previousRound = useRef<number>();
+  const previousRound = useRef<number | undefined>(undefined);
   const finishing = useRef(false);
   const questionStartedAt = useRef(Date.now());
 

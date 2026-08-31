@@ -65,7 +65,7 @@ interface Ctx {
 const Context=createContext<Ctx|null>(null);
 
 export function RingSessionProvider({children}:PropsWithChildren){
-  const [state,dispatch]=useReducer(reducer,undefined,()=>({session:loadSession(),storageLimited:false})); const [toast,setToast]=useState<string>(); const toastTimer=useRef<number>(); const storageWarned=useRef(false);
+  const [state,dispatch]=useReducer(reducer,undefined,()=>({session:loadSession(),storageLimited:false})); const [toast,setToast]=useState<string>(); const toastTimer=useRef<number | undefined>(undefined); const storageWarned=useRef(false);
   const showToast=useCallback((m:string)=>{setToast(m);if(toastTimer.current)window.clearTimeout(toastTimer.current);toastTimer.current=window.setTimeout(()=>setToast(undefined),3000)},[]);
   useEffect(()=>()=>{if(toastTimer.current)window.clearTimeout(toastTimer.current)},[]);
   useEffect(()=>{if(!state.session)return;try{saveSession(state.session)}catch{dispatch({type:'STORAGE_LIMITED'});if(!storageWarned.current){storageWarned.current=true;showToast('이 기기에서는 이어하기가 제한돼요. 지금 테스트는 계속할 수 있어요.')}}},[state.session,showToast]);
