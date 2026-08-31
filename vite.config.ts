@@ -1,7 +1,13 @@
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
+
 export default defineConfig({
-  plugins:[react()],
-  build:{target:'es2022'},
-  test:{environment:'jsdom',setupFiles:['./tests/unit/setup.ts'],coverage:{reporter:['text','json-summary']}}
+  plugins: [react()],
+  build: { target: 'es2022' },
+  test: {
+    environment: 'jsdom',
+    include: ['tests/unit/**/*.test.ts', 'tests/unit/**/*.test.tsx'],
+    setupFiles: ['./tests/unit/setup.ts'],
+    coverage: { reporter: ['text', 'json-summary'] }
+  }
 });
