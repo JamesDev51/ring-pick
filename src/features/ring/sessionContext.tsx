@@ -21,6 +21,18 @@ type Action =
 
 interface State { session?:RingSessionV1; storageLimited:boolean }
 
+function quickTournamentPlaceholder(seed:number):TournamentState {
+  return {
+    roundSize:16,
+    currentMatchIndex:0,
+    currentRoundIds:[],
+    nextRoundIds:[],
+    history:[],
+    initialIds:[],
+    startedMatchAt:Date.now(),
+  };
+}
+
 function newSession(mode:Mode, seed:number):RingSessionV1 {
   const now=new Date().toISOString();
   const campaign=typeof window!=='undefined' ? (()=>{const p=new URLSearchParams(window.location.search);return{source:p.get('utm_source')||undefined,medium:p.get('utm_medium')||undefined,name:p.get('utm_campaign')||undefined}})() : undefined;
@@ -29,7 +41,7 @@ function newSession(mode:Mode, seed:number):RingSessionV1 {
     sessionId:globalThis.crypto?.randomUUID?.()||`${Date.now()}-${seed}`, seed, mode,
     phase:mode==='quick'?'diagnostic':'tournament', startedAt:now, updatedAt:now, campaign,
     diagnostic:mode==='quick'?{index:0,answers:[]}:undefined,
-    tournament:mode==='full'?buildBracket(rings.map(r=>r.id),seed):buildBracket([],seed,true),
+    tournament:mode==='full'?buildBracket(rings.map(r=>r.id),seed):quickTournamentPlaceholder(seed),
   };
 }
 
