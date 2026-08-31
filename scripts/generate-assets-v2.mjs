@@ -16,7 +16,7 @@ const candidateDir = path.join(outputRoot, 'candidates');
 const diagnosticDir = path.join(outputRoot, 'diagnostic');
 const fallbackDir = path.join(outputRoot, 'fallback');
 const marker = path.join(outputRoot, '.generated-sha');
-const generatorVersion = '2.1.0';
+const generatorVersion = '2.2.0';
 const digest = crypto.createHash('sha256')
   .update(generatorVersion)
   .update(fs.readFileSync(candidatePath))
@@ -84,7 +84,9 @@ function surfaceDefs(id, finish) {
   return `<filter id="surface${id}" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="0"/></filter>`;
 }
 
-function ringShape(attrs, id, size, worn = false) {
+function ringShape(item, id, size, worn = false) {
+  const attrs = item.attributes;
+  const hints = item.renderHints ?? {};
   const scale = size / 768;
   const cx = (worn ? 278 : 384) * scale;
   const cy = (worn ? 548 : 326) * scale;
@@ -92,9 +94,9 @@ function ringShape(attrs, id, size, worn = false) {
   const ry = (worn ? 37 : 174) * scale;
   const width = widthMap[attrs.bandWidth] * scale;
   const main = `metal${id}`;
-  const secondaryTone = attrs.metalTone === 'twoTone' ? 'yellow' : secondaryDefault[attrs.metalTone];
+  const tone = attrs.metalTone === 'twoTone' ? (hints.baseTone ?? 'silver') : attrs.metalTone;
+  const secondaryTone = hints.secondaryTone ?? (attrs.metalTone === 'twoTone' ? 'yellow' : secondaryDefault[attrs.metalTone]);
   const secondary = `secondary${id}`;
-  const tone = attrs.metalTone === 'twoTone' ? 'silver' : attrs.metalTone;
   const defs = `${gradient(main, tone)}${gradient(secondary, secondaryTone)}${surfaceDefs(id, attrs.surfaceFinish)}<radialGradient id="stone${id}" cx="32%" cy="25%" r="78%"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#f8fdff"/><stop offset=".73" stop-color="#dce8ed"/><stop offset="1" stop-color="#b8c5cb"/></radialGradient><filter id="shadow${id}" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="${worn ? 4 : 10}"/></filter><filter id="gemShadow${id}" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#574b44" flood-opacity=".2"/></filter>`;
 
   const shadow = worn
@@ -124,6 +126,16 @@ function ringShape(attrs, id, size, worn = false) {
   }
 
   let accents = '';
+  if (attrs.bandProfile === 'concave') {
+    accents += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="#4f4742" stroke-opacity=".20" stroke-width="${Math.max(3, width * .46)}"/>`;
+    accents += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="url(#${main})" stroke-width="${Math.max(2, width * .17)}"/>`;
+  }
+  if (attrs.bandProfile === 'beveled') {
+    accents += `<ellipse cx="${cx}" cy="${cy}" rx="${rx - width * .27}" ry="${ry - width * .15}" fill="none" stroke="#fff" stroke-opacity=".68" stroke-width="${Math.max(2, width * .16)}"/>`;
+    accents += `<ellipse cx="${cx}" cy="${cy}" rx="${rx + width * .27}" ry="${ry + width * .15}" fill="none" stroke="#4e4540" stroke-opacity=".25" stroke-width="${Math.max(2, width * .13)}"/>`;
+  }
+  if (attrs.bandProfile === 'flat') accents += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="${Math.max(2, width * .12)}"/>`;
+  if (attrs.surfaceFinish === 'mixed') accents += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="${Math.max(3, width * .34)}" stroke-dasharray="${Math.max(4, 10 * scale)} ${Math.max(3, 7 * scale)}"/>`;
   if (attrs.colorLayout === 'centerStripe') accents += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="url(#${secondary})" stroke-width="${Math.max(3, width * .28)}"/>`;
   if (attrs.colorLayout === 'edgeContrast') {
     accents += `<ellipse cx="${cx}" cy="${cy}" rx="${rx - width * .32}" ry="${ry - width * .18}" fill="none" stroke="url(#${secondary})" stroke-width="${Math.max(3, width * .2)}"/>`;
@@ -204,13 +216,13 @@ function ringShape(attrs, id, size, worn = false) {
 
 function packSvg(item, size = 768) {
   const id = item.id.replaceAll('-', '');
-  const shape = ringShape(item.attributes, id, size, false);
+  const shape = ringShape(item, id, size, false);
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${escapeXml(item.title ?? item.id)}"><defs>${shape.defs}<radialGradient id="bg${id}" cx="48%" cy="40%" r="74%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#f1ece8"/></radialGradient></defs><rect width="100%" height="100%" fill="url(#bg${id})"/>${shape.shadow}${shape.baseShape}${shape.accents}${shape.stones}</svg>`);
 }
 
 function wornOverlaySvg(item, size = 768) {
   const id = `${item.id.replaceAll('-', '')}w`;
-  const shape = ringShape(item.attributes, id, size, true);
+  const shape = ringShape(item, id, size, true);
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><defs>${shape.defs}</defs>${shape.shadow}${shape.baseShape}${shape.accents}${shape.stones}</svg>`);
 }
 
