@@ -25,7 +25,7 @@ export function PlayPage() {
   const [view, setView] = useState<RingView>('pack');
   const [zoom, setZoom] = useState<ZoomState>();
   const [roundNotice, setRoundNotice] = useState<string>();
-  const previousRound = useRef<number>();
+  const previousRound = useRef<number | undefined>(undefined);
   const finalizing = useRef(false);
   const startedAt = useRef(Date.now());
   const phase = session?.phase;
@@ -83,7 +83,7 @@ export function PlayPage() {
   if (session.phase === 'result') return <Navigate to="/result" replace />;
 
   function pickDiagnostic(choice: DiagnosticChoice) {
-    if (locked) return;
+    if (locked || !session) return;
     const question = session.diagnostic ? diagnosticQuestions[session.diagnostic.index] : undefined;
     track('diagnostic_answer', { questionId: question?.id, selected: choice, latencyMs: Date.now() - startedAt.current });
     setLocked(true);
@@ -147,7 +147,7 @@ export function PlayPage() {
   const currentMatch = Math.min(session.tournament.currentMatchIndex + 1, roundMatches);
 
   function pickTournament(id: string, side: 'a' | 'b') {
-    if (locked) return;
+    if (locked || !session) return;
     track('match_answer', { mode: session.mode, roundSize: session.tournament.roundSize, matchIndex: session.tournament.currentMatchIndex, view });
     setLocked(true);
     setSelected(side);
