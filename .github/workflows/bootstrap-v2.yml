@@ -3,20 +3,19 @@ name: bootstrap-v2
 on:
   push:
     branches:
-      - feat/wedding-band-v2
+      - "feat/wedding-band-v2"
 
 permissions:
   contents: write
 
 jobs:
   unpack:
-    if: contains(github.event.head_commit.message, 'bootstrap: run v2 source unpack')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout feature branch
         uses: actions/checkout@v4
         with:
-          ref: feat/wedding-band-v2
+          ref: "feat/wedding-band-v2"
           fetch-depth: 0
 
       - name: Reconstruct and verify v2 source archive
