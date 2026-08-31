@@ -14,10 +14,13 @@ interface Props {
 }
 
 export function RingChoiceCard({ side, assets, view, alt, onSelect, onZoom, selected = false, disabled = false }: Props) {
-  const [loaded, setLoaded] = useState(false);
+  const [loadedAssetKey, setLoadedAssetKey] = useState<string>();
   const isCandidate = 'pack384' in assets;
   const src384 = isCandidate ? (view === 'pack' ? assets.pack384 : assets.worn384) : assets.image384;
   const src768 = isCandidate ? (view === 'pack' ? assets.pack768 : assets.worn768) : assets.image768;
+  const assetKey = `${view}|${src384}|${src768}|${assets.fallback}`;
+  const loaded = loadedAssetKey === assetKey;
+
   return (
     <article className={`choice-card ${selected ? 'is-selected' : ''}`} data-testid={`choice-card-${side}`}>
       <button
@@ -28,7 +31,17 @@ export function RingChoiceCard({ side, assets, view, alt, onSelect, onZoom, sele
         disabled={disabled || !loaded}
         aria-label={`${side === 'a' ? '위' : '아래'} 반지 선택`}
       >
-        <ResponsiveBandImage src384={src384} src768={src768} fallback={assets.fallback} alt={alt} eager onLoadState={setLoaded} />
+        <ResponsiveBandImage
+          key={assetKey}
+          src384={src384}
+          src768={src768}
+          fallback={assets.fallback}
+          alt={alt}
+          eager
+          onLoadState={(isLoaded) => {
+            if (isLoaded) setLoadedAssetKey(assetKey);
+          }}
+        />
         <span className="choice-footer">
           <span className="choice-letter">{side.toUpperCase()}</span>
           <strong>{selected ? '선택했어요' : loaded ? '이 반지가 더 좋아요' : '이미지 불러오는 중'}</strong>
