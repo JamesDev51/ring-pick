@@ -14,8 +14,8 @@ export const diagnosticQuestions = diagnosticQuestionSchema.array().parse(diagno
 export const copy = copyJson;
 export const valueSimilarity = valueSimilarityJson as Record<string, Record<string, Record<string, number>>>;
 
-export const candidateById: ReadonlyMap<string, WeddingBandCandidate> = new Map(candidates.map((item) => [item.id, item]));
-export const diagnosticAssetById: ReadonlyMap<string, DiagnosticAsset> = new Map(diagnosticAssets.map((item) => [item.id, item]));
+export const candidateById: Map<string, WeddingBandCandidate> = new Map(candidates.map((item) => [item.id, item]));
+export const diagnosticAssetById: Map<string, DiagnosticAsset> = new Map(diagnosticAssets.map((item) => [item.id, item]));
 
 if (candidates.length !== 64) throw new Error(`Expected 64 wedding bands, got ${candidates.length}`);
 if (diagnosticAssets.length !== 25) throw new Error(`Expected 25 diagnostic assets, got ${diagnosticAssets.length}`);
