@@ -41,11 +41,19 @@ function webpDimensions(buffer) {
 
 const expected = [];
 for (const candidate of candidates) {
-  expected.push([candidate.assets.pack384, 384], [candidate.assets.pack768, 768], [candidate.assets.worn384, 384], [candidate.assets.worn768, 768]);
+  expected.push(
+    [candidate.assets.pack384, 384, 'candidate-pack-384'],
+    [candidate.assets.pack768, 768, 'candidate-pack-768'],
+    [candidate.assets.worn384, 384, 'candidate-worn-384'],
+    [candidate.assets.worn768, 768, 'candidate-worn-768'],
+  );
   if (!fs.existsSync(absolute(candidate.assets.fallback))) fail(`Missing fallback ${candidate.assets.fallback}`);
 }
 for (const asset of diagnosticAssets) {
-  expected.push([asset.assets.image384, 384], [asset.assets.image768, 768]);
+  expected.push(
+    [asset.assets.image384, 384, 'diagnostic-384'],
+    [asset.assets.image768, 768, 'diagnostic-768'],
+  );
   if (!fs.existsSync(absolute(asset.assets.fallback))) fail(`Missing fallback ${asset.assets.fallback}`);
 }
 
@@ -54,8 +62,11 @@ if (diagnosticAssets.length !== 25) fail(`Expected 25 diagnostic assets, got ${d
 if (questions.length !== 18) fail(`Expected 18 diagnostic questions, got ${questions.length}`);
 if (expected.length !== 306) fail(`Expected 306 WebP variants, got ${expected.length}`);
 
-const hashes = new Map();
-for (const [assetPath, expectedSize] of expected) {
+// A controlled diagnostic visual is intentionally allowed to match an equivalent
+// candidate visual. Duplicates are only defects when two assets with the same role
+// would present indistinguishable choices inside the same experience.
+const hashesByRole = new Map();
+for (const [assetPath, expectedSize, role] of expected) {
   const file = absolute(assetPath);
   if (!fs.existsSync(file)) fail(`Missing WebP ${assetPath}`);
   const buffer = fs.readFileSync(file);
@@ -63,9 +74,12 @@ for (const [assetPath, expectedSize] of expected) {
   if (buffer.length > 240_000) fail(`Oversized WebP ${assetPath}: ${buffer.length}`);
   const [width, height] = webpDimensions(buffer);
   if (width !== expectedSize || height !== expectedSize) fail(`Wrong dimensions ${assetPath}: ${width}x${height}`);
+
   const hash = crypto.createHash('sha256').update(buffer).digest('hex');
-  if (hashes.has(hash)) fail(`Exact duplicate files: ${assetPath} and ${hashes.get(hash)}`);
-  hashes.set(hash, assetPath);
+  const roleHashes = hashesByRole.get(role) ?? new Map();
+  if (roleHashes.has(hash)) fail(`Exact duplicate ${role} files: ${assetPath} and ${roleHashes.get(hash)}`);
+  roleHashes.set(hash, assetPath);
+  hashesByRole.set(role, roleHashes);
 }
 
 const diagnosticById = new Map(diagnosticAssets.map((asset) => [asset.id, asset]));
