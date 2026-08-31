@@ -4,10 +4,13 @@ import { combineProfiles, scoreDiagnostic, scoreTournament } from '../../src/fea
 import type { DiagnosticAnswer, TournamentMatch } from '../../src/types/weddingBand';
 
 describe('preference engine', () => {
-  it('raises repeatedly selected diagnostic values', () => {
+  it('normalizes repeated exposures instead of automatically favoring frequently shown values', () => {
     const answers: DiagnosticAnswer[] = diagnosticQuestions.map((question) => ({ questionId: question.id, choice: 'a', answeredAt: new Date().toISOString() }));
     const profile = scoreDiagnostic(answers);
-    expect(profile.metalTone.topValue).toBe('champagne');
+    expect(profile.metalTone.topValue).toBe('silver');
+    expect(profile.metalTone.values.find((value) => value.value === 'champagne')!.exposures).toBeGreaterThan(
+      profile.metalTone.values.find((value) => value.value === 'silver')!.exposures,
+    );
     expect(profile.bandWidth.topValue).toBe('medium');
     expect(profile.diamondLayout.values.find((value) => value.value === 'none')!.wins).toBeGreaterThan(0);
   });
