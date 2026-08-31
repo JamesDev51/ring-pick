@@ -81,4 +81,6 @@ export function RingSessionProvider({children}:PropsWithChildren){
   const value=useMemo(()=>({state,start,answer,undoDiagnostic,beginQuickTournament,chooseWinner,undoMatch,finish,reset,restore,toast,showToast}),[state,start,answer,undoDiagnostic,beginQuickTournament,chooseWinner,undoMatch,finish,reset,restore,toast,showToast]);
   return <Context.Provider value={value}>{children}</Context.Provider>;
 }
+// This hook intentionally shares the Provider module so reducer/context internals remain private.
+// eslint-disable-next-line react-refresh/only-export-components
 export function useRingSession(){const c=useContext(Context);if(!c)throw new Error('RingSessionProvider missing');return c;}
