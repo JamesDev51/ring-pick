@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   unpack:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout feature branch
@@ -39,9 +40,8 @@ jobs:
           rm -f tests/e2e/production-ux.spec.ts
           rm -f tests/e2e/production-ux-v2.spec.ts
           rm -f tests/e2e/production-ux-v3.spec.ts
-          tar -xJf /tmp/ring-pick-v2-source.tar.xz
+          tar -xJf /tmp/ring-pick-v2-source.tar.xz --exclude='./.github/workflows/*'
           rm -rf bootstrap
-          rm -f .github/workflows/bootstrap-v2.yml
 
       - name: Commit complete v2 source
         shell: bash
