@@ -29,9 +29,9 @@ npm run dev
 
 ## Assets
 
-현재 저장소에는 제품 기능과 QA를 끝까지 실행할 수 있도록 **22개 진단 이미지 + 64개 packshot + 64개 worn = 150개 SVG 자산**이 포함됩니다. 모든 이미지는 동일한 속성 매니페스트에서 생성되어 진단 pair의 통제 변수를 보장합니다.
+개발/빌드 시작 전에 `npm run prepare:assets`가 **22개 진단 이미지 + 64개 packshot + 64개 worn = 150개 SVG 자산**을 결정적으로 생성합니다. 모든 이미지는 동일한 속성 매니페스트에서 만들어져 진단 pair의 통제 변수를 보장합니다. 생성 결과는 `public/images/rings/**`에 위치하며 Git에는 중복 저장하지 않습니다.
 
-실제 ChatGPT Image Gen 2 승인본을 사용할 때는 `src/data/ring/*.json`의 ringId/속성은 유지하고 `public/images/rings/**` 파일만 동일 경로로 교체하면 엔진과 화면 수정 없이 적용할 수 있습니다.
+실제 ChatGPT Image Gen 2 승인본을 사용할 때는 `src/data/ring/*.json`의 ringId/속성은 유지하고 생성된 `public/images/rings/**`와 같은 파일명/경로로 교체하면 엔진과 화면 수정 없이 적용할 수 있습니다.
 
 ```bash
 npm run check:assets

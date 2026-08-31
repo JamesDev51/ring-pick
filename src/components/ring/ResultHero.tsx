@@ -1,0 +1,4 @@
+import { useState } from 'react';
+import type { Ring, RingResult } from '../../types/ring';
+import './result.css';
+export function ResultHero({ ring, result }: { ring:Ring; result:RingResult }) { const [view,setView]=useState<'pack'|'worn'>('pack'); return <section className="result-hero"><p className="eyebrow">선택으로 찾은 나의 웨딩링 취향</p><h1>{result.persona}</h1><div className="hero-ring card"><img src={view==='pack'?ring.assets.packshot:ring.assets.worn} alt={view==='pack'?'내 취향 우승 반지 단독 이미지':'내 취향 우승 반지 착용 이미지'} /></div><div className="segmented" role="group" aria-label="반지 이미지 보기"><button className={view==='pack'?'active':''} onClick={()=>setView('pack')} type="button">반지만</button><button className={view==='worn'?'active':''} onClick={()=>setView('worn')} type="button">착용 모습</button></div><div className="top-chips">{result.topAttributes.map(x=><span key={x.attribute}>{x.label}</span>)}</div></section>; }

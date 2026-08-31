@@ -1,0 +1,14 @@
+.ring-card { width: 100%; padding: 0; border: 1px solid var(--border); border-radius: 18px; overflow: hidden; background: var(--surface); color: var(--text); cursor: pointer; min-width: 0; box-shadow: 0 7px 22px rgba(55,43,36,.05); transition: border-color 180ms, box-shadow 180ms, transform 180ms var(--ease-out); }
+.ring-card:active { transform: scale(.985); }
+.ring-card.is-selected { border: 2px solid var(--accent); box-shadow: 0 0 0 2px rgba(141,103,94,.08), var(--shadow-card); }
+.ring-card:disabled { opacity: 1; }
+.ring-image-wrap { display: block; aspect-ratio: 1 / 1; position: relative; background: var(--surface-subtle); overflow: hidden; }
+.ring-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.ring-skeleton { position: absolute; inset: 0; background: linear-gradient(100deg,#f3efeb 25%,#faf8f6 42%,#f3efeb 60%); background-size: 240% 100%; animation: shimmer 1.25s infinite; }
+@keyframes shimmer { to { background-position-x: -120%; } }
+.ring-check { position: absolute; right: 9px; top: 9px; width: 27px; height: 27px; border-radius: 50%; display: grid; place-items: center; color: #fff; background: var(--accent-dark); font-size: 15px; font-weight: 800; }
+.ring-pick-label { display: grid; place-items: center; min-height: 47px; font-size: 12px; font-weight: 650; color: var(--text-secondary); padding: 0 4px; }
+.ring-card.is-selected .ring-pick-label { color: var(--accent-dark); }
+.ring-error { position: absolute; inset: 0; display: grid; place-content: center; gap: 10px; padding: 12px; text-align: center; color: var(--text-secondary); font-size: 12px; }
+.ring-error strong { font-size: 12px; color: var(--text); }
+.ring-error span { color: var(--accent-dark); font-weight: 700; }

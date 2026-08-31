@@ -1,0 +1,2 @@
+.comparison-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 10px; width: 100%; }
+@media (max-width:359px){ .comparison-grid{gap:8px;} }
