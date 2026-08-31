@@ -29,17 +29,6 @@ async function choose(page: Page, side: 'a' | 'b' = 'a') {
   await page.waitForTimeout(205);
 }
 
-async function finishQuick(page: Page) {
-  await page.getByRole('button', { name: '2분 취향 찾기' }).click();
-  await expect(page.locator('.header-title')).toContainText('취향 찾기 · 1/18');
-  for (let index = 0; index < 18; index += 1) await choose(page, index % 3 === 0 ? 'b' : 'a');
-  await expect(page.getByText('내 취향에 가까운')).toBeVisible();
-  await expect(page.locator('.header-title')).toContainText('16강 · 1/8');
-  for (let index = 0; index < 15; index += 1) await choose(page, index % 4 === 0 ? 'b' : 'a');
-  await expect(page).toHaveURL(/\/result$/);
-  await expect(page.getByText('내 웨딩밴드 취향은')).toBeVisible();
-}
-
 async function assertMobileQuality(page: Page) {
   const metrics = await page.evaluate(() => ({
     overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
