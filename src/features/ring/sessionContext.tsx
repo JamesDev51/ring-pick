@@ -21,7 +21,7 @@ type Action =
 
 interface State { session?:RingSessionV1; storageLimited:boolean }
 
-function quickTournamentPlaceholder(seed:number):TournamentState {
+function quickTournamentPlaceholder():TournamentState {
   return {
     roundSize:16,
     currentMatchIndex:0,
@@ -41,7 +41,7 @@ function newSession(mode:Mode, seed:number):RingSessionV1 {
     sessionId:globalThis.crypto?.randomUUID?.()||`${Date.now()}-${seed}`, seed, mode,
     phase:mode==='quick'?'diagnostic':'tournament', startedAt:now, updatedAt:now, campaign,
     diagnostic:mode==='quick'?{index:0,answers:[]}:undefined,
-    tournament:mode==='full'?buildBracket(rings.map(r=>r.id),seed):quickTournamentPlaceholder(seed),
+    tournament:mode==='full'?buildBracket(rings.map(r=>r.id),seed):quickTournamentPlaceholder(),
   };
 }
 
