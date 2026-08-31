@@ -28,14 +28,19 @@ export function PlayPage() {
   const previousRound = useRef<number>();
   const finalizing = useRef(false);
   const startedAt = useRef(Date.now());
+  const phase = session?.phase;
+  const mode = session?.mode;
+  const roundSize = session?.tournament.roundSize;
+  const currentMatchIndex = session?.tournament.currentMatchIndex;
+  const currentRoundIds = session?.tournament.currentRoundIds;
 
-  useEffect(() => { startedAt.current = Date.now(); }, [session?.diagnostic?.index, session?.tournament.currentMatchIndex, session?.tournament.roundSize]);
+  useEffect(() => { startedAt.current = Date.now(); }, [session?.diagnostic?.index, currentMatchIndex, roundSize]);
 
   useEffect(() => {
-    if (session?.phase !== 'selecting') return;
+    if (phase !== 'selecting') return;
     const timer = window.setTimeout(beginQuickTournament, 720);
     return () => window.clearTimeout(timer);
-  }, [session?.phase, beginQuickTournament]);
+  }, [phase, beginQuickTournament]);
 
   const winnerId = session ? tournamentWinner(session.tournament) : undefined;
   useEffect(() => {
@@ -51,29 +56,28 @@ export function PlayPage() {
   }, [session, winnerId, finish, navigate]);
 
   useEffect(() => {
-    if (!session || session.phase !== 'tournament') return;
-    const current = session.tournament.roundSize;
-    if (previousRound.current && current < previousRound.current) {
-      setRoundNotice(`${current}강 진출`);
+    if (phase !== 'tournament' || !roundSize || !mode) return;
+    if (previousRound.current && roundSize < previousRound.current) {
+      setRoundNotice(`${roundSize}강 진출`);
       const timer = window.setTimeout(() => setRoundNotice(undefined), 720);
-      previousRound.current = current;
+      previousRound.current = roundSize;
       return () => window.clearTimeout(timer);
     }
-    previousRound.current = current;
-    track('round_start', { mode: session.mode, roundSize: current });
-  }, [session?.tournament.roundSize, session?.phase, session?.mode]);
+    previousRound.current = roundSize;
+    track('round_start', { mode, roundSize });
+  }, [roundSize, phase, mode]);
 
   useEffect(() => {
-    if (!session || session.phase !== 'tournament') return;
-    const start = session.tournament.currentMatchIndex * 2 + 2;
-    session.tournament.currentRoundIds.slice(start, start + 2).forEach((id) => {
+    if (phase !== 'tournament' || currentMatchIndex === undefined || !currentRoundIds) return;
+    const start = currentMatchIndex * 2 + 2;
+    currentRoundIds.slice(start, start + 2).forEach((id) => {
       const candidate = candidateById.get(id);
       if (candidate) {
         const image = new Image();
         image.src = candidate.assets.pack384;
       }
     });
-  }, [session?.tournament.currentMatchIndex, session?.tournament.currentRoundIds, session?.phase]);
+  }, [currentMatchIndex, currentRoundIds, phase]);
 
   if (!session) return <Navigate to="/" replace />;
   if (session.phase === 'result') return <Navigate to="/result" replace />;
