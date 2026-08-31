@@ -74,17 +74,22 @@ function alternatives(winner: WeddingBandCandidate, all: WeddingBandCandidate[])
   const ranked = all
     .filter((candidate) => candidate.id !== winner.id && candidate.enabled)
     .map((candidate) => ({ candidate, similarity: attributeSimilarity(winner.attributes, candidate.attributes) }))
-    .sort((a, b) => b.similarity - a.similarity);
-  const similar = ranked[0]?.candidate;
-  const lessOrMore = ranked.find(({ candidate }) => candidate.attributes.diamondLayout !== winner.attributes.diamondLayout)?.candidate;
-  const tone = ranked.find(({ candidate }) => candidate.attributes.metalTone !== winner.attributes.metalTone)?.candidate;
-  const unique = [similar, lessOrMore, tone]
+    .sort((a, b) => b.similarity - a.similarity || a.candidate.id.localeCompare(b.candidate.id));
+
+  const preferred = [
+    ranked[0]?.candidate,
+    ranked.find(({ candidate }) => candidate.attributes.diamondLayout !== winner.attributes.diamondLayout)?.candidate,
+    ranked.find(({ candidate }) => candidate.attributes.metalTone !== winner.attributes.metalTone)?.candidate,
+    ...ranked.map(({ candidate }) => candidate),
+  ];
+  const unique = preferred
     .filter((item): item is WeddingBandCandidate => Boolean(item))
     .filter((item, index, array) => array.findIndex((other) => other.id === item.id) === index)
     .slice(0, 3);
+
   return unique.map((candidate, index) => ({
     id: candidate.id,
-    reason: index === 0 ? '전체 분위기는 가장 비슷해요.' : index === 1 ? '반짝임의 강도를 다르게 비교해보세요.' : '같은 무드에서 금속 색감만 바꾼 대안이에요.',
+    reason: index === 0 ? '전체 분위기는 가장 비슷해요.' : index === 1 ? '반짝임의 강도를 다르게 비교해보세요.' : '같은 무드에서 금속 색감이나 디테일을 바꾼 대안이에요.',
   }));
 }
 
