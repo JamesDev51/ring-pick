@@ -41,18 +41,20 @@ function webpDimensions(buffer) {
 
 const expected = [];
 for (const candidate of candidates) {
+  const signature = candidate.id;
   expected.push(
-    [candidate.assets.pack384, 384, 'candidate-pack-384'],
-    [candidate.assets.pack768, 768, 'candidate-pack-768'],
-    [candidate.assets.worn384, 384, 'candidate-worn-384'],
-    [candidate.assets.worn768, 768, 'candidate-worn-768'],
+    [candidate.assets.pack384, 384, 'candidate-pack-384', signature],
+    [candidate.assets.pack768, 768, 'candidate-pack-768', signature],
+    [candidate.assets.worn384, 384, 'candidate-worn-384', signature],
+    [candidate.assets.worn768, 768, 'candidate-worn-768', signature],
   );
   if (!fs.existsSync(absolute(candidate.assets.fallback))) fail(`Missing fallback ${candidate.assets.fallback}`);
 }
 for (const asset of diagnosticAssets) {
+  const signature = JSON.stringify(asset.attributes);
   expected.push(
-    [asset.assets.image384, 384, 'diagnostic-384'],
-    [asset.assets.image768, 768, 'diagnostic-768'],
+    [asset.assets.image384, 384, 'diagnostic-384', signature],
+    [asset.assets.image768, 768, 'diagnostic-768', signature],
   );
   if (!fs.existsSync(absolute(asset.assets.fallback))) fail(`Missing fallback ${asset.assets.fallback}`);
 }
@@ -62,11 +64,11 @@ if (diagnosticAssets.length !== 25) fail(`Expected 25 diagnostic assets, got ${d
 if (questions.length !== 18) fail(`Expected 18 diagnostic questions, got ${questions.length}`);
 if (expected.length !== 306) fail(`Expected 306 WebP variants, got ${expected.length}`);
 
-// A controlled diagnostic visual is intentionally allowed to match an equivalent
-// candidate visual. Duplicates are only defects when two assets with the same role
-// would present indistinguishable choices inside the same experience.
+// A controlled diagnostic asset may intentionally reuse the same neutral master
+// under different semantic labels. Reuse is allowed only when the full attributes
+// are identical. Candidate packshots and worn views must remain visually distinct.
 const hashesByRole = new Map();
-for (const [assetPath, expectedSize, role] of expected) {
+for (const [assetPath, expectedSize, role, signature] of expected) {
   const file = absolute(assetPath);
   if (!fs.existsSync(file)) fail(`Missing WebP ${assetPath}`);
   const buffer = fs.readFileSync(file);
@@ -77,8 +79,11 @@ for (const [assetPath, expectedSize, role] of expected) {
 
   const hash = crypto.createHash('sha256').update(buffer).digest('hex');
   const roleHashes = hashesByRole.get(role) ?? new Map();
-  if (roleHashes.has(hash)) fail(`Exact duplicate ${role} files: ${assetPath} and ${roleHashes.get(hash)}`);
-  roleHashes.set(hash, assetPath);
+  const previous = roleHashes.get(hash);
+  if (previous && !(role.startsWith('diagnostic-') && previous.signature === signature)) {
+    fail(`Exact duplicate ${role} files: ${assetPath} and ${previous.assetPath}`);
+  }
+  if (!previous) roleHashes.set(hash, { assetPath, signature });
   hashesByRole.set(role, roleHashes);
 }
 
