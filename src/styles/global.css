@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 html { background: #ede8e3; color-scheme: light; }
-body { margin: 0; min-width: 320px; min-height: 100svh; font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #ede8e3; color: var(--text); -webkit-font-smoothing: antialiased; }
+body { margin: 0; min-width: 320px; min-height: 100svh; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; background: #ede8e3; color: var(--text); -webkit-font-smoothing: antialiased; }
 button, input, textarea { font: inherit; }
 button { touch-action: manipulation; }
 a { color: inherit; }
