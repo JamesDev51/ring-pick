@@ -5,10 +5,9 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['dist', 'playwright-report', 'test-results', 'coverage'] },
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
+  { ignores: ['dist', 'playwright-report', 'test-results', 'artifacts', 'public/images'] },
   {
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
     languageOptions: { ecmaVersion: 2022, globals: globals.browser },
     plugins: { 'react-hooks': reactHooks, 'react-refresh': reactRefresh },
@@ -16,15 +15,6 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }]
-    }
+    },
   },
-  {
-    files: ['scripts/**/*.mjs', 'eslint.config.js'],
-    languageOptions: { ecmaVersion: 2022, globals: globals.node }
-  },
-  {
-    files: ['tests/**/*.{ts,tsx}', 'playwright.config.ts', 'vite.config.ts'],
-    languageOptions: { globals: { ...globals.node, ...globals.browser } }
-  }
 );

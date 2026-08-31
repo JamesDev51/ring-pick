@@ -1,7 +1,7 @@
 {
   "name": "ring-pick",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,19 +11,21 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "e2e": "playwright test",
-    "check:assets": "node scripts/check-assets.mjs",
+    "check:assets": "node scripts/generate-assets-v2.mjs && node scripts/check-assets.mjs",
     "verify": "npm run lint && npm run test && npm run check:assets && npm run build",
-    "prepare:assets": "node scripts/generate-assets.mjs",
-    "predev": "npm run prepare:assets",
-    "prebuild": "npm run prepare:assets",
-    "preverify": "npm run prepare:assets"
+    "generate:fallback": "node scripts/generate-fallback-assets.mjs",
+    "predev": "npm run generate:assets",
+    "prebuild": "npm run generate:assets",
+    "pree2e": "npm run generate:assets",
+    "generate:assets": "node scripts/generate-assets-v2.mjs"
   },
   "dependencies": {
     "html-to-image": "1.11.13",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "react-router-dom": "7.18.3",
-    "zod": "4.5.4"
+    "zod": "4.5.4",
+    "sharp": "0.34.3"
   },
   "devDependencies": {
     "@eslint/js": "9.35.0",

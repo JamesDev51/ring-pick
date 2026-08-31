@@ -1,0 +1,536 @@
+[
+  {
+    "id": "DA-STONE-NONE",
+    "axis": "diamondLayout",
+    "value": "none",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-STONE-NONE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-STONE-NONE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-STONE-NONE.svg"
+    }
+  },
+  {
+    "id": "DA-STONE-SINGLE",
+    "axis": "diamondLayout",
+    "value": "singleFlush",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "singleFlush",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-STONE-SINGLE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-STONE-SINGLE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-STONE-SINGLE.svg"
+    }
+  },
+  {
+    "id": "DA-STONE-SHORTLINE",
+    "axis": "diamondLayout",
+    "value": "shortLine",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "shortLine",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "stoneCount": 5
+    },
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-STONE-SHORTLINE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-STONE-SHORTLINE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-STONE-SHORTLINE.svg"
+    }
+  },
+  {
+    "id": "DA-STONE-HALFPAVE",
+    "axis": "diamondLayout",
+    "value": "halfPave",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "halfPave",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-STONE-HALFPAVE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-STONE-HALFPAVE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-STONE-HALFPAVE.svg"
+    }
+  },
+  {
+    "id": "DA-STONE-DIAGONAL",
+    "axis": "motif",
+    "value": "diagonal",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "shortLine",
+      "motif": "diagonal",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "stoneCount": 5
+    },
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-STONE-DIAGONAL-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-STONE-DIAGONAL-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-STONE-DIAGONAL.svg"
+    }
+  },
+  {
+    "id": "DA-STONE-PETITECENTER",
+    "axis": "diamondLayout",
+    "value": "petiteCenter",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "petiteCenter",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "centerStyle": "bezel",
+      "centerCarat": 0.18
+    },
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-STONE-PETITECENTER-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-STONE-PETITECENTER-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-STONE-PETITECENTER.svg"
+    }
+  },
+  {
+    "id": "DA-WIDTH-SLIM",
+    "axis": "bandWidth",
+    "value": "slim",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-WIDTH-SLIM-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-WIDTH-SLIM-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-WIDTH-SLIM.svg"
+    }
+  },
+  {
+    "id": "DA-WIDTH-MEDIUM",
+    "axis": "bandWidth",
+    "value": "medium",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-WIDTH-MEDIUM-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-WIDTH-MEDIUM-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-WIDTH-MEDIUM.svg"
+    }
+  },
+  {
+    "id": "DA-WIDTH-WIDE",
+    "axis": "bandWidth",
+    "value": "wide",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "wide",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-WIDTH-WIDE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-WIDTH-WIDE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-WIDTH-WIDE.svg"
+    }
+  },
+  {
+    "id": "DA-PROFILE-DOMED",
+    "axis": "bandProfile",
+    "value": "domed",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-PROFILE-DOMED-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-PROFILE-DOMED-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-PROFILE-DOMED.svg"
+    }
+  },
+  {
+    "id": "DA-PROFILE-FLAT",
+    "axis": "bandProfile",
+    "value": "flat",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-PROFILE-FLAT-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-PROFILE-FLAT-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-PROFILE-FLAT.svg"
+    }
+  },
+  {
+    "id": "DA-PROFILE-BEVELED",
+    "axis": "bandProfile",
+    "value": "beveled",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "beveled",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-PROFILE-BEVELED-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-PROFILE-BEVELED-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-PROFILE-BEVELED.svg"
+    }
+  },
+  {
+    "id": "DA-FINISH-POLISHED",
+    "axis": "surfaceFinish",
+    "value": "polished",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-FINISH-POLISHED-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-FINISH-POLISHED-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-FINISH-POLISHED.svg"
+    }
+  },
+  {
+    "id": "DA-FINISH-SATIN",
+    "axis": "surfaceFinish",
+    "value": "satin",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "satin",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-FINISH-SATIN-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-FINISH-SATIN-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-FINISH-SATIN.svg"
+    }
+  },
+  {
+    "id": "DA-FINISH-HAMMERED",
+    "axis": "surfaceFinish",
+    "value": "hammered",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "hammered",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-FINISH-HAMMERED-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-FINISH-HAMMERED-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-FINISH-HAMMERED.svg"
+    }
+  },
+  {
+    "id": "DA-FINISH-MILGRAIN",
+    "axis": "surfaceFinish",
+    "value": "milgrain",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "milgrain",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-FINISH-MILGRAIN-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-FINISH-MILGRAIN-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-FINISH-MILGRAIN.svg"
+    }
+  },
+  {
+    "id": "DA-MOTIF-PLAIN",
+    "axis": "motif",
+    "value": "straight",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-MOTIF-PLAIN-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-MOTIF-PLAIN-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-MOTIF-PLAIN.svg"
+    }
+  },
+  {
+    "id": "DA-MOTIF-GROOVE",
+    "axis": "motif",
+    "value": "centerGroove",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "centerGroove",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-MOTIF-GROOVE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-MOTIF-GROOVE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-MOTIF-GROOVE.svg"
+    }
+  },
+  {
+    "id": "DA-MOTIF-WAVE",
+    "axis": "motif",
+    "value": "wave",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "wave",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-MOTIF-WAVE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-MOTIF-WAVE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-MOTIF-WAVE.svg"
+    }
+  },
+  {
+    "id": "DA-COLOR-MONO",
+    "axis": "colorLayout",
+    "value": "mono",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-COLOR-MONO-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-COLOR-MONO-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-COLOR-MONO.svg"
+    }
+  },
+  {
+    "id": "DA-COLOR-TWOTONE",
+    "axis": "colorLayout",
+    "value": "centerStripe",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "centerStripe",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": "silver"
+    },
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-COLOR-TWOTONE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-COLOR-TWOTONE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-COLOR-TWOTONE.svg"
+    }
+  },
+  {
+    "id": "DA-TONE-SILVER",
+    "axis": "metalTone",
+    "value": "silver",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-TONE-SILVER-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-TONE-SILVER-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-TONE-SILVER.svg"
+    }
+  },
+  {
+    "id": "DA-TONE-CHAMPAGNE",
+    "axis": "metalTone",
+    "value": "champagne",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-TONE-CHAMPAGNE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-TONE-CHAMPAGNE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-TONE-CHAMPAGNE.svg"
+    }
+  },
+  {
+    "id": "DA-TONE-YELLOW",
+    "axis": "metalTone",
+    "value": "yellow",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-TONE-YELLOW-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-TONE-YELLOW-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-TONE-YELLOW.svg"
+    }
+  },
+  {
+    "id": "DA-TONE-ROSE",
+    "axis": "metalTone",
+    "value": "rose",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {},
+    "assets": {
+      "image384": "/images/wedding-bands/v2/diagnostic/DA-TONE-ROSE-384.webp",
+      "image768": "/images/wedding-bands/v2/diagnostic/DA-TONE-ROSE-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/DA-TONE-ROSE.svg"
+    }
+  }
+]
