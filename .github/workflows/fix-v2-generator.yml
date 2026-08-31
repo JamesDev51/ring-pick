@@ -1,0 +1,52 @@
+name: fix-v2-generator
+
+on:
+  push:
+    branches: ['feat/wedding-band-v2']
+    paths: ['.github/workflows/fix-v2-generator.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/wedding-band-v2
+          fetch-depth: 0
+      - name: Apply generator fixes
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('scripts/generate-assets-v2.mjs')
+          s = p.read_text()
+          s = s.replace("const generatorVersion = '2.1.0';", "const generatorVersion = '2.2.0';")
+          s = s.replace(
+              "function ringShape(attrs, id, size, worn = false) {\n  const scale = size / 768;",
+              "function ringShape(item, id, size, worn = false) {\n  const attrs = item.attributes;\n  const hints = item.renderHints ?? {};\n  const scale = size / 768;",
+          )
+          s = s.replace(
+              "  const secondaryTone = attrs.metalTone === 'twoTone' ? 'yellow' : secondaryDefault[attrs.metalTone];\n  const secondary = `secondary${id}`;\n  const tone = attrs.metalTone === 'twoTone' ? 'silver' : attrs.metalTone;",
+              "  const tone = attrs.metalTone === 'twoTone' ? (hints.baseTone ?? 'silver') : attrs.metalTone;\n  const secondaryTone = hints.secondaryTone ?? (attrs.metalTone === 'twoTone' ? 'yellow' : secondaryDefault[attrs.metalTone]);\n  const secondary = `secondary${id}`;",
+          )
+          s = s.replace(
+              "  let accents = '';\n  if (attrs.colorLayout === 'centerStripe')",
+              "  let accents = '';\n  if (attrs.bandProfile === 'concave') {\n    accents += `<ellipse cx=\"${cx}\" cy=\"${cy}\" rx=\"${rx}\" ry=\"${ry}\" fill=\"none\" stroke=\"#4f4742\" stroke-opacity=\".20\" stroke-width=\"${Math.max(3, width * .46)}\"/>`;\n    accents += `<ellipse cx=\"${cx}\" cy=\"${cy}\" rx=\"${rx}\" ry=\"${ry}\" fill=\"none\" stroke=\"url(#${main})\" stroke-width=\"${Math.max(2, width * .17)}\"/>`;\n  }\n  if (attrs.bandProfile === 'beveled') {\n    accents += `<ellipse cx=\"${cx}\" cy=\"${cy}\" rx=\"${rx - width * .27}\" ry=\"${ry - width * .15}\" fill=\"none\" stroke=\"#fff\" stroke-opacity=\".68\" stroke-width=\"${Math.max(2, width * .16)}\"/>`;\n    accents += `<ellipse cx=\"${cx}\" cy=\"${cy}\" rx=\"${rx + width * .27}\" ry=\"${ry + width * .15}\" fill=\"none\" stroke=\"#4e4540\" stroke-opacity=\".25\" stroke-width=\"${Math.max(2, width * .13)}\"/>`;\n  }\n  if (attrs.bandProfile === 'flat') accents += `<ellipse cx=\"${cx}\" cy=\"${cy}\" rx=\"${rx}\" ry=\"${ry}\" fill=\"none\" stroke=\"#fff\" stroke-opacity=\".45\" stroke-width=\"${Math.max(2, width * .12)}\"/>`;\n  if (attrs.surfaceFinish === 'mixed') accents += `<ellipse cx=\"${cx}\" cy=\"${cy}\" rx=\"${rx}\" ry=\"${ry}\" fill=\"none\" stroke=\"#fff\" stroke-opacity=\".22\" stroke-width=\"${Math.max(3, width * .34)}\" stroke-dasharray=\"${Math.max(4, 10 * scale)} ${Math.max(3, 7 * scale)}\"/>`;\n  if (attrs.colorLayout === 'centerStripe')",
+          )
+          s = s.replace('ringShape(item.attributes, id, size, false)', 'ringShape(item, id, size, false)')
+          s = s.replace('ringShape(item.attributes, id, size, true)', 'ringShape(item, id, size, true)')
+          if "function ringShape(item, id" not in s or "hints.baseTone" not in s:
+              raise SystemExit('generator patch did not apply')
+          p.write_text(s)
+          PY
+      - name: Commit source cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/generate-assets-v2.mjs
+          git commit -m "fix: render distinct two-tone and profile assets"
+          git push origin HEAD:feat/wedding-band-v2
