@@ -1,33 +1,37 @@
 name: ci
+
 on:
   push:
-    branches: [master, main]
+    branches: ['master', 'feat/**']
   pull_request:
+
 permissions:
-  contents: write
+  contents: read
+
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Lint, unit, assets, build
+      - name: Lint, unit, assets and build
         run: npm run verify
-      - name: Install Chromium
-        run: npx playwright install --with-deps chromium
+      - name: Install mobile browsers
+        run: npx playwright install --with-deps chromium webkit
       - name: Mobile E2E
         run: npm run e2e
-      - name: Commit generated lockfile
-        if: github.event_name == 'push' && github.actor != 'github-actions[bot]'
-        run: |
-          if ! git diff --quiet -- package-lock.json || [ -n "$(git status --porcelain package-lock.json)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add package-lock.json
-            git commit -m "chore: lock dependencies [skip ci]"
-            git push
-          fi
+      - name: Upload test report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ring-pick-v2-test-report
+          path: |
+            playwright-report
+            test-results
+          retention-days: 7

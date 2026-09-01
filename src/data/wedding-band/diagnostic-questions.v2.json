@@ -1,0 +1,164 @@
+[
+  {
+    "id": "D01",
+    "attribute": "diamondLayout",
+    "aValue": "none",
+    "bValue": "singleFlush",
+    "assetA": "DA-STONE-NONE",
+    "assetB": "DA-STONE-SINGLE",
+    "prompt": "스톤이 없는 밴드와 한 점 포인트 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D02",
+    "attribute": "metalTone",
+    "aValue": "silver",
+    "bValue": "champagne",
+    "assetA": "DA-TONE-SILVER",
+    "assetB": "DA-TONE-CHAMPAGNE",
+    "prompt": "차가운 실버톤과 부드러운 샴페인톤 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D03",
+    "attribute": "bandWidth",
+    "aValue": "slim",
+    "bValue": "medium",
+    "assetA": "DA-WIDTH-SLIM",
+    "assetB": "DA-WIDTH-MEDIUM",
+    "prompt": "밴드 폭만 보고 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D04",
+    "attribute": "surfaceFinish",
+    "aValue": "polished",
+    "bValue": "satin",
+    "assetA": "DA-FINISH-POLISHED",
+    "assetB": "DA-FINISH-SATIN",
+    "prompt": "유광과 은은한 새틴 무광 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D05",
+    "attribute": "diamondLayout",
+    "aValue": "singleFlush",
+    "bValue": "shortLine",
+    "assetA": "DA-STONE-SINGLE",
+    "assetB": "DA-STONE-SHORTLINE",
+    "prompt": "한 점 포인트와 짧은 다이아 라인 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D06",
+    "attribute": "bandProfile",
+    "aValue": "domed",
+    "bValue": "flat",
+    "assetA": "DA-PROFILE-DOMED",
+    "assetB": "DA-PROFILE-FLAT",
+    "prompt": "둥근 단면과 평평한 단면 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D07",
+    "attribute": "colorLayout",
+    "aValue": "mono",
+    "bValue": "centerStripe",
+    "assetA": "DA-COLOR-MONO",
+    "assetB": "DA-COLOR-TWOTONE",
+    "prompt": "한 가지 색과 두 가지 색을 섞은 밴드 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D08",
+    "attribute": "motif",
+    "aValue": "straight",
+    "bValue": "centerGroove",
+    "assetA": "DA-MOTIF-PLAIN",
+    "assetB": "DA-MOTIF-GROOVE",
+    "prompt": "민자 면과 중앙 홈 디테일 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D09",
+    "attribute": "metalTone",
+    "aValue": "champagne",
+    "bValue": "yellow",
+    "assetA": "DA-TONE-CHAMPAGNE",
+    "assetB": "DA-TONE-YELLOW",
+    "prompt": "샴페인톤과 따뜻한 옐로골드톤 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D10",
+    "attribute": "surfaceFinish",
+    "aValue": "satin",
+    "bValue": "hammered",
+    "assetA": "DA-FINISH-SATIN",
+    "assetB": "DA-FINISH-HAMMERED",
+    "prompt": "잔잔한 무광과 손으로 두드린 듯한 텍스처 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D11",
+    "attribute": "diamondLayout",
+    "aValue": "shortLine",
+    "bValue": "halfPave",
+    "assetA": "DA-STONE-SHORTLINE",
+    "assetB": "DA-STONE-HALFPAVE",
+    "prompt": "짧은 라인과 하프 파베 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D12",
+    "attribute": "bandProfile",
+    "aValue": "flat",
+    "bValue": "beveled",
+    "assetA": "DA-PROFILE-FLAT",
+    "assetB": "DA-PROFILE-BEVELED",
+    "prompt": "평평한 면과 모서리가 경사진 베벨 면 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D13",
+    "attribute": "metalTone",
+    "aValue": "champagne",
+    "bValue": "rose",
+    "assetA": "DA-TONE-CHAMPAGNE",
+    "assetB": "DA-TONE-ROSE",
+    "prompt": "샴페인톤과 부드러운 로즈골드톤 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D14",
+    "attribute": "motif",
+    "aValue": "straight",
+    "bValue": "wave",
+    "assetA": "DA-MOTIF-PLAIN",
+    "assetB": "DA-MOTIF-WAVE",
+    "prompt": "곧은 밴드와 부드러운 웨이브 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D15",
+    "attribute": "motif",
+    "aValue": "straight",
+    "bValue": "diagonal",
+    "assetA": "DA-STONE-SHORTLINE",
+    "assetB": "DA-STONE-DIAGONAL",
+    "prompt": "직선 라인과 사선 라인 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D16",
+    "attribute": "surfaceFinish",
+    "aValue": "polished",
+    "bValue": "milgrain",
+    "assetA": "DA-FINISH-POLISHED",
+    "assetB": "DA-FINISH-MILGRAIN",
+    "prompt": "매끈한 엣지와 밀그레인 비드 엣지 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D17",
+    "attribute": "bandWidth",
+    "aValue": "medium",
+    "bValue": "wide",
+    "assetA": "DA-WIDTH-MEDIUM",
+    "assetB": "DA-WIDTH-WIDE",
+    "prompt": "미디엄 폭과 와이드 폭 중 더 끌리는 쪽을 골라주세요."
+  },
+  {
+    "id": "D18",
+    "attribute": "diamondLayout",
+    "aValue": "singleFlush",
+    "bValue": "petiteCenter",
+    "assetA": "DA-STONE-SINGLE",
+    "assetB": "DA-STONE-PETITECENTER",
+    "prompt": "밴드에 매립된 한 점과 낮은 쁘띠 센터 스톤 중 더 끌리는 쪽을 골라주세요."
+  }
+]

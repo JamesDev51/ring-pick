@@ -1,48 +1,74 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Navigate, useLocation, useNavigate } from 'react-router-dom';
-import { MobileShell } from '../components/ring/MobileShell';
-import { ResultHero } from '../components/ring/ResultHero';
-import { PreferenceBars } from '../components/ring/PreferenceBars';
-import { StoreSentence } from '../components/ring/StoreSentence';
-import { AlternativeRingList } from '../components/ring/AlternativeRingList';
-import { ShareActions } from '../components/ring/ShareActions';
-import { ConfirmSheet } from '../components/ring/ConfirmSheet';
-import { Toast } from '../components/ring/Toast';
-import { ringById, rings } from '../data/ring';
-import { decodeShared } from '../features/ring/shareCodec';
-import { buildResult } from '../features/ring/resultBuilder';
-import { emptyScores } from '../features/ring/preferenceEngine';
-import { ATTRIBUTE_ORDER } from '../features/ring/constants';
-import { useRingSession } from '../features/ring/sessionContext';
-import { track } from '../features/ring/analytics';
-import './result-page.css';
+import { useMemo, useState } from 'react';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
+import { AlternativeBandList } from '../components/wedding-band/AlternativeBandList';
+import { ConfirmSheet } from '../components/wedding-band/ConfirmSheet';
+import { MobileShell } from '../components/wedding-band/MobileShell';
+import { PartnerGuide } from '../components/wedding-band/PartnerGuide';
+import { PreferenceMap } from '../components/wedding-band/PreferenceMap';
+import { ResultHero } from '../components/wedding-band/ResultHero';
+import { ShareActions } from '../components/wedding-band/ShareActions';
+import { StoreSentence } from '../components/wedding-band/StoreSentence';
+import { Toast } from '../components/wedding-band/Toast';
+import { candidateById, candidates } from '../data/wedding-band';
+import { decodeShareResult } from '../features/wedding-band/shareCodec';
+import { buildSharedResult } from '../features/wedding-band/resultBuilder';
+import { useWeddingBandSession } from '../features/wedding-band/sessionContext';
+import { track } from '../features/wedding-band/analytics';
+import './result.css';
 
-export function ResultPage(){
-  const {search}=useLocation(); const nav=useNavigate();
-  const {state,reset,start,toast,showToast}=useRingSession(); const [confirm,setConfirm]=useState(false);
-  const shared=useMemo(()=>search?decodeShared(search):undefined,[search]);
-  const sessionResult=state.session?.phase==='result'?state.session.result:undefined;
-  const result=useMemo(()=>{
-    if (search && shared) {
-      const scores=emptyScores();
-      for (const key of ATTRIBUTE_ORDER) { const value=shared.attributes[key]; const stat=scores[key][value]; if(stat){stat.score=.72;stat.comparisons=2;} }
-      return buildResult(scores,shared,rings);
-    }
-    return sessionResult;
-  },[search,shared,sessionResult]);
-  const winner=result?ringById.get(result.winnerId):undefined;
-  useEffect(()=>{if(result){track('result_view',{mode:state.session?.mode??'shared',winnerId:result.winnerId})}else if(search){track('error_view',{code:'invalid_result_query'})}},[result,search,state.session?.mode]);
+async function copyText(text: string) {
+  if (navigator.clipboard?.writeText) return navigator.clipboard.writeText(text);
+  const input = document.createElement('textarea'); input.value = text; document.body.append(input); input.select(); document.execCommand('copy'); input.remove();
+}
 
-  if(search&&!shared)return <MobileShell><div className="page invalid-result"><div className="wordmark"><span className="wordmark-mark">◇</span>RING PICK</div><div><p className="eyebrow">링크를 확인해 주세요</p><h1 className="h2">이 결과 링크는 열 수 없어요.</h1><p className="body">링크가 잘렸거나 오래된 형식일 수 있어요. 직접 테스트하면 새로운 결과를 만들 수 있어요.</p></div><button className="primary-button" onClick={()=>nav('/')} type="button">나도 해보기</button></div></MobileShell>;
-  if(!result||!winner)return <Navigate to="/" replace/>;
+export function ResultPage() {
+  const { token } = useParams();
+  const navigate = useNavigate();
+  const { session, reset, toast, showToast } = useWeddingBandSession();
+  const [restartOpen, setRestartOpen] = useState(false);
+  const shared = useMemo(() => token ? decodeShareResult(token) : undefined, [token]);
+  const sharedWinner = shared ? candidateById.get(shared.w) : undefined;
+  const result = shared && sharedWinner ? buildSharedResult(sharedWinner, shared.m, shared.p, candidates) : session?.result;
+  const winner = result ? candidateById.get(result.winnerId) : undefined;
 
-  return <MobileShell><div className="page result-page">
-    <div className="result-top"><button className="icon-button" onClick={()=>nav('/')} aria-label="홈으로" type="button">‹</button><div className="wordmark">RING PICK</div><span className="top-spacer"/></div>
-    <ResultHero ring={winner} result={result}/><PreferenceBars preferences={result.preferences}/>
-    <StoreSentence sentence={result.storeSentence} exclusion={result.exclusionSentence} onCopied={()=>showToast('매장용 문장을 복사했어요.')}/>
-    <AlternativeRingList alternatives={result.alternatives}/><ShareActions ring={winner} result={result} onToast={showToast}/>
-    <button className="ghost-restart" type="button" onClick={()=>setConfirm(true)}>다시 취향 찾기</button>
-    <p className="result-disclaimer">실제 착용감·크기·색은 조명, 손 크기, 제작 방식에 따라 달라질 수 있어요.<br/>이 결과는 구매 결정을 대신하지 않는 시각 취향 참고 자료예요.</p>
-    <ConfirmSheet open={confirm} title="새로 취향을 찾아볼까요?" body="현재 결과는 이 기기의 이어하기 기록에서 지워져요. 저장한 이미지는 그대로 남아 있어요." confirmText="처음부터 다시 하기" onClose={()=>setConfirm(false)} onConfirm={()=>{reset();start('quick');nav('/play')}}/><Toast message={toast}/>
-  </div></MobileShell>;
+  if (token && (!shared || !sharedWinner)) {
+    return (
+      <MobileShell><div className="page invalid-result-page">
+        <span className="large-mark" aria-hidden="true">◇</span>
+        <h1>결과 링크를 열 수 없어요</h1>
+        <p>이전 버전 링크이거나 주소가 일부 잘렸을 수 있어요. 새 웨딩밴드 테스트를 시작해주세요.</p>
+        <button className="primary-button" type="button" onClick={() => navigate('/')}>새 테스트 시작</button>
+      </div></MobileShell>
+    );
+  }
+  if (!result || !winner) return <Navigate to="/" replace />;
+
+  async function copyStoreSentence() {
+    await copyText(result!.storeSentence);
+    showToast('매장용 문장을 복사했어요.');
+    track('store_copy', { family: result!.winnerFamily });
+  }
+
+  function restart() {
+    reset();
+    setRestartOpen(false);
+    navigate('/');
+  }
+
+  return (
+    <MobileShell><div className="page result-page">
+      <header className="result-header"><button className="icon-button" type="button" aria-label="홈으로 가기" onClick={() => navigate('/')}>‹</button><strong>링픽 결과</strong><span /></header>
+      {token && <div className="shared-badge">공유받은 웨딩밴드 취향 결과예요</div>}
+      <ResultHero result={result} winner={winner} />
+      <PreferenceMap profile={result.preferences} />
+      <StoreSentence sentence={result.storeSentence} dislikes={result.strongDislikes} onCopy={copyStoreSentence} />
+      <PartnerGuide sentence={result.partnerSentence} />
+      <AlternativeBandList alternatives={result.alternatives} lookup={candidateById} />
+      <ShareActions result={result} winner={winner} onToast={showToast} />
+      <button className="secondary-button restart-button" type="button" onClick={() => setRestartOpen(true)}>다시 취향 찾기</button>
+      <p className="result-disclaimer">화면의 색감은 실제 합금과 다를 수 있어요. 소재, 착용감, 내구성, 사이즈 조절 가능 여부는 매장에서 확인해주세요.{winner.attributes.diamondLayout === 'fullEternity' ? ' 풀 이터니티 링은 사이즈 조절이 제한될 수 있어요.' : ''}</p>
+      <ConfirmSheet open={restartOpen} title="현재 결과를 지우고 다시 시작할까요?" body="이 기기에 저장된 진행 상황과 결과가 삭제됩니다." confirmLabel="새로 시작" onConfirm={restart} onCancel={() => setRestartOpen(false)} danger />
+      <Toast message={toast} />
+    </div></MobileShell>
+  );
 }

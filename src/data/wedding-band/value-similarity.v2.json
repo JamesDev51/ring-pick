@@ -1,0 +1,448 @@
+{
+  "metalTone": {
+    "silver": {
+      "silver": 1,
+      "champagne": 0.45,
+      "yellow": 0.1,
+      "rose": 0.2,
+      "twoTone": 0.55
+    },
+    "champagne": {
+      "silver": 0.45,
+      "champagne": 1,
+      "yellow": 0.55,
+      "rose": 0.6,
+      "twoTone": 0.65
+    },
+    "yellow": {
+      "silver": 0.1,
+      "champagne": 0.55,
+      "yellow": 1,
+      "rose": 0.35,
+      "twoTone": 0.6
+    },
+    "rose": {
+      "silver": 0.2,
+      "champagne": 0.6,
+      "yellow": 0.35,
+      "rose": 1,
+      "twoTone": 0.6
+    },
+    "twoTone": {
+      "silver": 0.55,
+      "champagne": 0.65,
+      "yellow": 0.6,
+      "rose": 0.6,
+      "twoTone": 1
+    }
+  },
+  "bandWidth": {
+    "slim": {
+      "slim": 1,
+      "medium": 0.55,
+      "wide": 0.1
+    },
+    "medium": {
+      "slim": 0.55,
+      "medium": 1,
+      "wide": 0.55
+    },
+    "wide": {
+      "slim": 0.1,
+      "medium": 0.55,
+      "wide": 1
+    }
+  },
+  "bandProfile": {
+    "domed": {
+      "domed": 1,
+      "oval": 0.85,
+      "flat": 0.25,
+      "beveled": 0.35,
+      "concave": 0.15,
+      "faceted": 0.2
+    },
+    "oval": {
+      "domed": 0.85,
+      "oval": 1,
+      "flat": 0.35,
+      "beveled": 0.4,
+      "concave": 0.2,
+      "faceted": 0.25
+    },
+    "flat": {
+      "domed": 0.25,
+      "oval": 0.35,
+      "flat": 1,
+      "beveled": 0.7,
+      "concave": 0.45,
+      "faceted": 0.55
+    },
+    "beveled": {
+      "domed": 0.35,
+      "oval": 0.4,
+      "flat": 0.7,
+      "beveled": 1,
+      "concave": 0.45,
+      "faceted": 0.65
+    },
+    "concave": {
+      "domed": 0.15,
+      "oval": 0.2,
+      "flat": 0.45,
+      "beveled": 0.45,
+      "concave": 1,
+      "faceted": 0.45
+    },
+    "faceted": {
+      "domed": 0.2,
+      "oval": 0.25,
+      "flat": 0.55,
+      "beveled": 0.65,
+      "concave": 0.45,
+      "faceted": 1
+    }
+  },
+  "surfaceFinish": {
+    "polished": {
+      "polished": 1,
+      "satin": 0.35,
+      "hairline": 0.25,
+      "sandblast": 0.1,
+      "hammered": 0.1,
+      "milgrain": 0.35,
+      "engraved": 0.3,
+      "mixed": 0.7
+    },
+    "satin": {
+      "polished": 0.35,
+      "satin": 1,
+      "hairline": 0.75,
+      "sandblast": 0.6,
+      "hammered": 0.35,
+      "milgrain": 0.45,
+      "engraved": 0.4,
+      "mixed": 0.7
+    },
+    "hairline": {
+      "polished": 0.25,
+      "satin": 0.75,
+      "hairline": 1,
+      "sandblast": 0.55,
+      "hammered": 0.3,
+      "milgrain": 0.4,
+      "engraved": 0.55,
+      "mixed": 0.65
+    },
+    "sandblast": {
+      "polished": 0.1,
+      "satin": 0.6,
+      "hairline": 0.55,
+      "sandblast": 1,
+      "hammered": 0.5,
+      "milgrain": 0.35,
+      "engraved": 0.3,
+      "mixed": 0.6
+    },
+    "hammered": {
+      "polished": 0.1,
+      "satin": 0.35,
+      "hairline": 0.3,
+      "sandblast": 0.5,
+      "hammered": 1,
+      "milgrain": 0.45,
+      "engraved": 0.45,
+      "mixed": 0.55
+    },
+    "milgrain": {
+      "polished": 0.35,
+      "satin": 0.45,
+      "hairline": 0.4,
+      "sandblast": 0.35,
+      "hammered": 0.45,
+      "milgrain": 1,
+      "engraved": 0.75,
+      "mixed": 0.55
+    },
+    "engraved": {
+      "polished": 0.3,
+      "satin": 0.4,
+      "hairline": 0.55,
+      "sandblast": 0.3,
+      "hammered": 0.45,
+      "milgrain": 0.75,
+      "engraved": 1,
+      "mixed": 0.55
+    },
+    "mixed": {
+      "polished": 0.7,
+      "satin": 0.7,
+      "hairline": 0.65,
+      "sandblast": 0.6,
+      "hammered": 0.55,
+      "milgrain": 0.55,
+      "engraved": 0.55,
+      "mixed": 1
+    }
+  },
+  "diamondLayout": {
+    "none": {
+      "none": 1,
+      "singleFlush": 0.55,
+      "triple": 0.3,
+      "shortLine": 0.15,
+      "diagonalLine": 0.15,
+      "channel": 0.15,
+      "quarterPave": 0.05,
+      "halfPave": 0,
+      "fullEternity": 0,
+      "petiteCenter": 0.2
+    },
+    "singleFlush": {
+      "none": 0.55,
+      "singleFlush": 1,
+      "triple": 0.75,
+      "shortLine": 0.55,
+      "diagonalLine": 0.5,
+      "channel": 0.4,
+      "quarterPave": 0.25,
+      "halfPave": 0.15,
+      "fullEternity": 0.05,
+      "petiteCenter": 0.65
+    },
+    "triple": {
+      "none": 0.3,
+      "singleFlush": 0.75,
+      "triple": 1,
+      "shortLine": 0.75,
+      "diagonalLine": 0.7,
+      "channel": 0.55,
+      "quarterPave": 0.4,
+      "halfPave": 0.25,
+      "fullEternity": 0.1,
+      "petiteCenter": 0.55
+    },
+    "shortLine": {
+      "none": 0.15,
+      "singleFlush": 0.55,
+      "triple": 0.75,
+      "shortLine": 1,
+      "diagonalLine": 0.85,
+      "channel": 0.8,
+      "quarterPave": 0.65,
+      "halfPave": 0.45,
+      "fullEternity": 0.2,
+      "petiteCenter": 0.4
+    },
+    "diagonalLine": {
+      "none": 0.15,
+      "singleFlush": 0.5,
+      "triple": 0.7,
+      "shortLine": 0.85,
+      "diagonalLine": 1,
+      "channel": 0.7,
+      "quarterPave": 0.6,
+      "halfPave": 0.4,
+      "fullEternity": 0.2,
+      "petiteCenter": 0.35
+    },
+    "channel": {
+      "none": 0.15,
+      "singleFlush": 0.4,
+      "triple": 0.55,
+      "shortLine": 0.8,
+      "diagonalLine": 0.7,
+      "channel": 1,
+      "quarterPave": 0.65,
+      "halfPave": 0.45,
+      "fullEternity": 0.2,
+      "petiteCenter": 0.35
+    },
+    "quarterPave": {
+      "none": 0.05,
+      "singleFlush": 0.25,
+      "triple": 0.4,
+      "shortLine": 0.65,
+      "diagonalLine": 0.6,
+      "channel": 0.65,
+      "quarterPave": 1,
+      "halfPave": 0.8,
+      "fullEternity": 0.55,
+      "petiteCenter": 0.25
+    },
+    "halfPave": {
+      "none": 0,
+      "singleFlush": 0.15,
+      "triple": 0.25,
+      "shortLine": 0.45,
+      "diagonalLine": 0.4,
+      "channel": 0.45,
+      "quarterPave": 0.8,
+      "halfPave": 1,
+      "fullEternity": 0.75,
+      "petiteCenter": 0.2
+    },
+    "fullEternity": {
+      "none": 0,
+      "singleFlush": 0.05,
+      "triple": 0.1,
+      "shortLine": 0.2,
+      "diagonalLine": 0.2,
+      "channel": 0.2,
+      "quarterPave": 0.55,
+      "halfPave": 0.75,
+      "fullEternity": 1,
+      "petiteCenter": 0.1
+    },
+    "petiteCenter": {
+      "none": 0.2,
+      "singleFlush": 0.65,
+      "triple": 0.55,
+      "shortLine": 0.4,
+      "diagonalLine": 0.35,
+      "channel": 0.35,
+      "quarterPave": 0.25,
+      "halfPave": 0.2,
+      "fullEternity": 0.1,
+      "petiteCenter": 1
+    }
+  },
+  "motif": {
+    "straight": {
+      "straight": 1,
+      "centerGroove": 0.65,
+      "edgeLine": 0.65,
+      "diagonal": 0.3,
+      "vLine": 0.35,
+      "wave": 0.2,
+      "twist": 0.15,
+      "segmented": 0.25,
+      "asymmetric": 0.25
+    },
+    "centerGroove": {
+      "straight": 0.65,
+      "centerGroove": 1,
+      "edgeLine": 0.75,
+      "diagonal": 0.45,
+      "vLine": 0.45,
+      "wave": 0.25,
+      "twist": 0.2,
+      "segmented": 0.4,
+      "asymmetric": 0.4
+    },
+    "edgeLine": {
+      "straight": 0.65,
+      "centerGroove": 0.75,
+      "edgeLine": 1,
+      "diagonal": 0.45,
+      "vLine": 0.4,
+      "wave": 0.25,
+      "twist": 0.25,
+      "segmented": 0.45,
+      "asymmetric": 0.4
+    },
+    "diagonal": {
+      "straight": 0.3,
+      "centerGroove": 0.45,
+      "edgeLine": 0.45,
+      "diagonal": 1,
+      "vLine": 0.65,
+      "wave": 0.45,
+      "twist": 0.5,
+      "segmented": 0.65,
+      "asymmetric": 0.7
+    },
+    "vLine": {
+      "straight": 0.35,
+      "centerGroove": 0.45,
+      "edgeLine": 0.4,
+      "diagonal": 0.65,
+      "vLine": 1,
+      "wave": 0.7,
+      "twist": 0.55,
+      "segmented": 0.45,
+      "asymmetric": 0.65
+    },
+    "wave": {
+      "straight": 0.2,
+      "centerGroove": 0.25,
+      "edgeLine": 0.25,
+      "diagonal": 0.45,
+      "vLine": 0.7,
+      "wave": 1,
+      "twist": 0.8,
+      "segmented": 0.35,
+      "asymmetric": 0.75
+    },
+    "twist": {
+      "straight": 0.15,
+      "centerGroove": 0.2,
+      "edgeLine": 0.25,
+      "diagonal": 0.5,
+      "vLine": 0.55,
+      "wave": 0.8,
+      "twist": 1,
+      "segmented": 0.4,
+      "asymmetric": 0.75
+    },
+    "segmented": {
+      "straight": 0.25,
+      "centerGroove": 0.4,
+      "edgeLine": 0.45,
+      "diagonal": 0.65,
+      "vLine": 0.45,
+      "wave": 0.35,
+      "twist": 0.4,
+      "segmented": 1,
+      "asymmetric": 0.65
+    },
+    "asymmetric": {
+      "straight": 0.25,
+      "centerGroove": 0.4,
+      "edgeLine": 0.4,
+      "diagonal": 0.7,
+      "vLine": 0.65,
+      "wave": 0.75,
+      "twist": 0.75,
+      "segmented": 0.65,
+      "asymmetric": 1
+    }
+  },
+  "colorLayout": {
+    "mono": {
+      "mono": 1,
+      "centerStripe": 0.25,
+      "edgeContrast": 0.25,
+      "split": 0.15,
+      "interwoven": 0.1
+    },
+    "centerStripe": {
+      "mono": 0.25,
+      "centerStripe": 1,
+      "edgeContrast": 0.7,
+      "split": 0.45,
+      "interwoven": 0.45
+    },
+    "edgeContrast": {
+      "mono": 0.25,
+      "centerStripe": 0.7,
+      "edgeContrast": 1,
+      "split": 0.45,
+      "interwoven": 0.45
+    },
+    "split": {
+      "mono": 0.15,
+      "centerStripe": 0.45,
+      "edgeContrast": 0.45,
+      "split": 1,
+      "interwoven": 0.65
+    },
+    "interwoven": {
+      "mono": 0.1,
+      "centerStripe": 0.45,
+      "edgeContrast": 0.45,
+      "split": 0.65,
+      "interwoven": 1
+    }
+  }
+}

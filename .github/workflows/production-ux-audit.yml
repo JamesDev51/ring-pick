@@ -1,10 +1,8 @@
-name: production-ux-audit
+name: production-ux-audit-v2
 
 on:
   push:
-    paths:
-      - '.github/workflows/production-ux-audit.yml'
-      - 'tests/e2e/production-ux-v3.spec.ts'
+    branches: ['master']
   workflow_dispatch:
 
 permissions:
@@ -13,32 +11,36 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-      - name: Install dependencies
-        run: npm ci --no-audit --no-fund
-      - name: Install Chromium
-        run: npx playwright install --with-deps chromium
-      - name: Run production UX audit
+      - run: npm install --no-audit --no-fund
+      - name: Wait for Vercel production
+        run: |
+          for i in {1..24}; do
+            if curl -fsS https://ring-pick.vercel.app | grep -q '웨딩밴드'; then exit 0; fi
+            sleep 5
+          done
+          echo 'Production did not expose the v2 HTML in time' >&2
+          exit 1
+      - run: npx playwright install --with-deps chromium webkit
+      - name: Run production user journeys
         env:
-          UX_AUDIT: '1'
-          PLAYWRIGHT_BASE_URL: 'https://ring-pick.vercel.app'
-        run: npx playwright test tests/e2e/production-ux-v3.spec.ts
-      - name: Upload UX artifacts
+          PLAYWRIGHT_BASE_URL: https://ring-pick.vercel.app
+          UX_AUDIT: 1
+        run: npm run e2e
+      - name: Upload production audit artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: production-ux-artifacts-v3
+          name: production-ux-v2-artifacts
           path: |
-            ux-artifacts-v3
             playwright-report
             test-results
-          if-no-files-found: warn
+            ux-artifacts-v2
+          if-no-files-found: ignore
           retention-days: 7

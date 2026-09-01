@@ -1,20 +1,36 @@
 import { describe, expect, it } from 'vitest';
-import { questions, rings } from '../../src/data/ring';
-import { scoreDiagnostic, preferencesFromScores, scoreTournament } from '../../src/features/ring/preferenceEngine';
-import { selectQuickCandidates } from '../../src/features/ring/candidateSelector';
-import { buildBracket, currentPair, recordMatch, tournamentWinner, undoLastMatch } from '../../src/features/ring/bracketEngine';
+import { candidateById, diagnosticQuestions } from '../../src/data/wedding-band';
+import { combineProfiles, scoreDiagnostic, scoreTournament } from '../../src/features/wedding-band/preferenceEngine';
+import type { DiagnosticAnswer, TournamentMatch } from '../../src/types/weddingBand';
 
-describe('diagnostic engine',()=>{
-  it('uses Laplace smoothing and detects repeated preference',()=>{
-    const answers=questions.map(q=>({questionId:q.id,choice:'a' as const,answeredAt:'2026-08-31T00:00:00Z'}));
-    const scores=scoreDiagnostic(answers); expect(scores.metal.white!.score).toBeGreaterThan(.5); const prefs=preferencesFromScores(scores); expect(prefs).toHaveLength(8);
+describe('preference engine', () => {
+  it('normalizes repeated exposures instead of automatically favoring frequently shown values', () => {
+    const answers: DiagnosticAnswer[] = diagnosticQuestions.map((question) => ({ questionId: question.id, choice: 'a', answeredAt: new Date().toISOString() }));
+    const profile = scoreDiagnostic(answers);
+    expect(profile.metalTone.topValue).toBe('silver');
+    expect(profile.metalTone.values.find((value) => value.value === 'champagne')!.exposures).toBeGreaterThan(
+      profile.metalTone.values.find((value) => value.value === 'silver')!.exposures,
+    );
+    expect(profile.bandWidth.topValue).toBe('slim');
+    expect(profile.diamondLayout.values.find((value) => value.value === 'none')!.wins).toBeGreaterThan(0);
   });
-  it('selects 16 unique deterministic quick candidates',()=>{
-    const answers=questions.map((q,i)=>({questionId:q.id,choice:(i%3===0?'neutral':'a') as 'neutral'|'a',answeredAt:'2026-08-31T00:00:00Z'})); const s=scoreDiagnostic(answers); const a=selectQuickCandidates(rings,s,12345),b=selectQuickCandidates(rings,s,12345);expect(a).toEqual(b);expect(a).toHaveLength(16);expect(new Set(a).size).toBe(16);
-  });
-});
 
-describe('bracket engine',()=>{
-  it('completes full 64 bracket in exactly 63 matches',()=>{let state=buildBracket(rings.map(r=>r.id),77);for(let i=0;i<63;i++){const [left]=currentPair(state);state=recordMatch(state,left!,'full',Date.now()+i+1);}expect(state.history).toHaveLength(63);expect(tournamentWinner(state)).toBeTruthy();expect(scoreTournament(state.history).metal).toBeTruthy();});
-  it('undo reconstructs the exact prior match',()=>{let s=buildBracket(rings.slice(0,16).map(r=>r.id),42);const [a]=currentPair(s);s=recordMatch(s,a!,'quick',1000);const [b]=currentPair(s);s=recordMatch(s,b!,'quick',1100);const u=undoLastMatch(s,'quick');expect(u.history).toHaveLength(1);expect(currentPair(u)).toEqual(currentPair(recordMatch(buildBracket(s.initialIds,1,true),a!,'quick',1000)));});
+  it('does not score axes that are identical between winner and loser', () => {
+    const a = candidateById.get('WB001')!;
+    const b = candidateById.get('WB009')!;
+    const match: TournamentMatch = { roundSize:16, matchIndex:0, leftId:a.id, rightId:b.id, winnerId:b.id, loserId:a.id, answeredAt:new Date().toISOString() };
+    const profile = scoreTournament([match], candidateById);
+    expect(profile.metalTone.values.reduce((sum, item) => sum + item.exposures, 0)).toBe(0);
+    expect(profile.diamondLayout.values.find((item) => item.value === 'singleFlush')!.wins).toBe(1);
+  });
+
+  it('combines quick mode at 60/40 and caps winner bonus', () => {
+    const answers: DiagnosticAnswer[] = diagnosticQuestions.map((question) => ({ questionId: question.id, choice: 'a', answeredAt: new Date().toISOString() }));
+    const diagnostic = scoreDiagnostic(answers);
+    const tournament = scoreTournament([], candidateById);
+    const winner = candidateById.get('WB001')!;
+    const combined = combineProfiles(diagnostic, tournament, 'quick', winner);
+    expect(combined.metalTone.values.every((item) => item.score <= 1)).toBe(true);
+    expect(combined.metalTone.values.find((item) => item.value === 'silver')!.score).toBeGreaterThan(0.5);
+  });
 });

@@ -1,0 +1,2220 @@
+[
+  {
+    "id": "WB001",
+    "family": "classic",
+    "title": "쿨 실버 슬림 돔",
+    "description": "얇고 둥근 유광 민자 밴드",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "quiet"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB001-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB001-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB001-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB001-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB001.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB002",
+    "family": "classic",
+    "title": "샴페인 미디엄 오벌",
+    "description": "따뜻한 뉴트럴 톤의 편안한 오벌 밴드",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "oval",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB002-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB002-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB002-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB002-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB002.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB003",
+    "family": "classic",
+    "title": "옐로 플랫 클래식",
+    "description": "평평한 윗면이 또렷한 옐로골드 밴드",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB003-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB003-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB003-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB003-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB003.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB004",
+    "family": "classic",
+    "title": "로즈 슬림 새틴",
+    "description": "부드러운 로즈톤과 은은한 새틴 질감",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "slim",
+      "bandProfile": "oval",
+      "surfaceFinish": "satin",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "quiet"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB004-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB004-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB004-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB004-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB004.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB005",
+    "family": "classic",
+    "title": "실버 와이드 플랫",
+    "description": "장식 없이 폭과 평면감으로 존재감을 주는 밴드",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "wide",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB005-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB005-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB005-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB005-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB005.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB006",
+    "family": "classic",
+    "title": "샴페인 베벨 엣지",
+    "description": "중앙은 은은하고 모서리는 유광인 베벨 밴드",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "beveled",
+      "surfaceFinish": "mixed",
+      "diamondLayout": "none",
+      "motif": "edgeLine",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "mixedMode": "matteCenter"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB006-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB006-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB006-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB006-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB006.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB007",
+    "family": "classic",
+    "title": "옐로 와이드 헤어라인",
+    "description": "넓은 면에 고운 결이 흐르는 데일리 밴드",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "wide",
+      "bandProfile": "domed",
+      "surfaceFinish": "hairline",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB007-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB007-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB007-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB007-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB007.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB008",
+    "family": "classic",
+    "title": "로즈 미디엄 플랫",
+    "description": "깔끔한 평면과 로즈톤이 중심인 미니멀 밴드",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB008-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB008-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB008-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB008-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB008.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB009",
+    "family": "point",
+    "title": "실버 원 포인트",
+    "description": "센터에 참깨 크기 다이아 한 개를 낮게 매립",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "singleFlush",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "quiet"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB009-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB009-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB009-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB009-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB009.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB010",
+    "family": "point",
+    "title": "샴페인 매트 포인트",
+    "description": "무광 면 중앙의 작은 다이아 한 개",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "satin",
+      "diamondLayout": "singleFlush",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB010-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB010-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB010-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB010-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB010.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB011",
+    "family": "point",
+    "title": "옐로 오프셋 포인트",
+    "description": "중앙에서 살짝 벗어난 포인트 다이아",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "medium",
+      "bandProfile": "beveled",
+      "surfaceFinish": "polished",
+      "diamondLayout": "singleFlush",
+      "motif": "asymmetric",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneOffset": 0.34
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB011-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB011-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB011-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB011-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB011.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB012",
+    "family": "point",
+    "title": "로즈 트리플 포인트",
+    "description": "작은 다이아 세 개가 짧게 모인 디자인",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "triple",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB012-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB012-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB012-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB012-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB012.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB013",
+    "family": "point",
+    "title": "실버 사이드 포인트",
+    "description": "정면보다 살짝 측면에 숨은 포인트 스톤",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "concave",
+      "surfaceFinish": "satin",
+      "diamondLayout": "singleFlush",
+      "motif": "asymmetric",
+      "colorLayout": "mono",
+      "boldness": "quiet"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneOffset": 0.62
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB013-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB013-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB013-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB013-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB013.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB014",
+    "family": "point",
+    "title": "샴페인 그루브 포인트",
+    "description": "중앙 홈 끝에 다이아 한 개가 놓인 구조",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "wide",
+      "bandProfile": "flat",
+      "surfaceFinish": "hairline",
+      "diamondLayout": "singleFlush",
+      "motif": "centerGroove",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneOffset": 0.28
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB014-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB014-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB014-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB014-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB014.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB015",
+    "family": "point",
+    "title": "옐로 쓰리 도트",
+    "description": "밴드 전면에 작은 스톤 세 개를 간격 있게 배치",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "triple",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "spreadStones": true
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB015-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB015-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB015-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB015-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB015.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB016",
+    "family": "point",
+    "title": "로즈 사선 포인트",
+    "description": "유광 사선 절개와 포인트 스톤 한 개",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "medium",
+      "bandProfile": "beveled",
+      "surfaceFinish": "mixed",
+      "diamondLayout": "singleFlush",
+      "motif": "diagonal",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "mixedMode": "diagonal"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB016-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB016-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB016-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB016-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB016.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB017",
+    "family": "line",
+    "title": "실버 파이브 라인",
+    "description": "작은 라운드 스톤 다섯 개가 짧게 이어짐",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "slim",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "shortLine",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 5
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB017-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB017-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB017-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB017-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB017.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB018",
+    "family": "line",
+    "title": "샴페인 사선 라인",
+    "description": "밴드를 가로지르는 사선 홈 안의 미세 다이아",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "beveled",
+      "surfaceFinish": "satin",
+      "diamondLayout": "diagonalLine",
+      "motif": "diagonal",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 5
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB018-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB018-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB018-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB018-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB018.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB019",
+    "family": "line",
+    "title": "옐로 미니 채널",
+    "description": "짧은 채널 안에 작은 스톤을 반듯하게 정렬",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "channel",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 6
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB019-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB019-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB019-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB019-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB019.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB020",
+    "family": "line",
+    "title": "로즈 V 라인",
+    "description": "얕은 V 형태를 따라 작은 스톤이 모임",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "shortLine",
+      "motif": "vLine",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 7
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB020-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB020-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB020-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB020-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB020.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB021",
+    "family": "line",
+    "title": "실버 오목 채널",
+    "description": "오목한 중앙부에 짧은 채널 세팅",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "wide",
+      "bandProfile": "concave",
+      "surfaceFinish": "hairline",
+      "diamondLayout": "channel",
+      "motif": "centerGroove",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 7
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB021-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB021-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB021-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB021-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB021.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB022",
+    "family": "line",
+    "title": "샴페인 엣지 스파클",
+    "description": "한쪽 가장자리에만 아주 짧게 이어지는 다이아",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "mixed",
+      "diamondLayout": "shortLine",
+      "motif": "edgeLine",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 6,
+      "stoneSide": "outer"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB022-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB022-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB022-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB022-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB022.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB023",
+    "family": "line",
+    "title": "옐로 패싯 사선",
+    "description": "다면 컷과 사선 다이아 라인이 만나는 구조",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "wide",
+      "bandProfile": "faceted",
+      "surfaceFinish": "polished",
+      "diamondLayout": "diagonalLine",
+      "motif": "diagonal",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 6
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB023-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB023-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB023-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB023-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB023.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB024",
+    "family": "line",
+    "title": "로즈 세븐 라인",
+    "description": "무광 면에 일곱 개 미세 스톤을 짧게 배치",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "satin",
+      "diamondLayout": "shortLine",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 7
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB024-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB024-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB024-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB024-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB024.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB025",
+    "family": "pave",
+    "title": "실버 쿼터 파베",
+    "description": "손등에 보이는 구간만 은은하게 파베 세팅",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "quarterPave",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB025-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB025-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB025-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB025-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB025.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB026",
+    "family": "pave",
+    "title": "샴페인 하프 파베",
+    "description": "얇은 밴드 절반을 작은 다이아가 감싸는 디자인",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "halfPave",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB026-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB026-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB026-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB026-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB026.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB027",
+    "family": "pave",
+    "title": "옐로 플랫 쿼터",
+    "description": "평평한 밴드의 전면 일부만 파베",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "quarterPave",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB027-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB027-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB027-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB027-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB027.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB028",
+    "family": "pave",
+    "title": "로즈 베벨 하프",
+    "description": "사선 모서리와 하프 파베가 어우러진 슬림 링",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "slim",
+      "bandProfile": "beveled",
+      "surfaceFinish": "polished",
+      "diamondLayout": "halfPave",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB028-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB028-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB028-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB028-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB028.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB029",
+    "family": "pave",
+    "title": "실버 풀 이터니티",
+    "description": "작은 다이아가 밴드 전체를 연속해서 감쌈",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "slim",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "fullEternity",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameTonePlainWider",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB029-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB029-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB029-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB029-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB029.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB030",
+    "family": "pave",
+    "title": "샴페인 그로잉 파베",
+    "description": "중앙으로 갈수록 스톤 크기가 커지는 파베",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "halfPave",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "growingPave": true
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB030-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB030-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB030-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB030-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB030.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB031",
+    "family": "pave",
+    "title": "옐로 트위스트 파베",
+    "description": "교차하는 한 줄에만 미세 다이아가 이어짐",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "halfPave",
+      "motif": "twist",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "oneSidePave": true
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB031-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB031-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB031-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB031-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB031.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB032",
+    "family": "pave",
+    "title": "로즈 사이드 파베",
+    "description": "정면이 아닌 한쪽 측면에서 은은히 반짝이는 파베",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "quarterPave",
+      "motif": "edgeLine",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneSide": "outer"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB032-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB032-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB032-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB032-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB032.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB033",
+    "family": "structure",
+    "title": "실버 센터 그루브",
+    "description": "밴드 중앙을 따라 얕은 홈이 이어지는 디자인",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "centerGroove",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB033-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB033-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB033-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB033-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB033.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB034",
+    "family": "structure",
+    "title": "샴페인 더블 엣지",
+    "description": "무광 중앙과 두 개의 유광 엣지 라인",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "wide",
+      "bandProfile": "beveled",
+      "surfaceFinish": "satin",
+      "diamondLayout": "none",
+      "motif": "edgeLine",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "mixedMode": "polishedEdges"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB034-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB034-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB034-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB034-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB034.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB035",
+    "family": "structure",
+    "title": "옐로 패싯 세그먼트",
+    "description": "짧은 면이 반복되며 빛을 나누는 건축적 밴드",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "medium",
+      "bandProfile": "faceted",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "segmented",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB035-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB035-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB035-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB035-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB035.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB036",
+    "family": "structure",
+    "title": "로즈 와이드 콘케이브",
+    "description": "중앙이 오목하고 양쪽 림이 도드라지는 구조",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "wide",
+      "bandProfile": "concave",
+      "surfaceFinish": "mixed",
+      "diamondLayout": "none",
+      "motif": "centerGroove",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB036-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB036-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB036-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB036-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB036.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB037",
+    "family": "structure",
+    "title": "실버 다이애거널 컷",
+    "description": "넓은 무광 면을 사선 절개가 가로지름",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "wide",
+      "bandProfile": "flat",
+      "surfaceFinish": "hairline",
+      "diamondLayout": "none",
+      "motif": "diagonal",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB037-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB037-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB037-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB037-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB037.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB038",
+    "family": "structure",
+    "title": "샴페인 인터섹션",
+    "description": "교차하는 두 면의 접점에 작은 스톤 한 개",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "beveled",
+      "surfaceFinish": "polished",
+      "diamondLayout": "singleFlush",
+      "motif": "asymmetric",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "intersection": true
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB038-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB038-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB038-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB038-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB038.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB039",
+    "family": "structure",
+    "title": "옐로 엣지 프레임",
+    "description": "무광 중앙을 유광 테두리가 감싸는 프레임 구조",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "wide",
+      "bandProfile": "domed",
+      "surfaceFinish": "satin",
+      "diamondLayout": "none",
+      "motif": "edgeLine",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "mixedMode": "polishedEdges"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB039-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB039-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB039-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB039-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB039.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB040",
+    "family": "structure",
+    "title": "로즈 리듬 세그먼트",
+    "description": "작은 사선 면이 규칙적으로 반복되는 밴드",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "medium",
+      "bandProfile": "faceted",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "segmented",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB040-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB040-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB040-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB040-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB040.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB041",
+    "family": "texture",
+    "title": "실버 소프트 새틴",
+    "description": "장식 없이 부드러운 무광 결만 강조",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "satin",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "quiet"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB041-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB041-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB041-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB041-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB041.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB042",
+    "family": "texture",
+    "title": "샴페인 해머드",
+    "description": "손으로 두드린 듯 자연스러운 표면 굴곡",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "wide",
+      "bandProfile": "flat",
+      "surfaceFinish": "hammered",
+      "diamondLayout": "none",
+      "motif": "asymmetric",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB042-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB042-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB042-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB042-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB042.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB043",
+    "family": "texture",
+    "title": "옐로 밀그레인 클래식",
+    "description": "양쪽 가장자리를 작은 비드 장식이 감쌈",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "milgrain",
+      "diamondLayout": "none",
+      "motif": "edgeLine",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB043-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB043-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB043-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB043-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB043.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB044",
+    "family": "texture",
+    "title": "로즈 파인 인그레이브",
+    "description": "아주 얕고 섬세한 선각 패턴을 넣은 슬림 밴드",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "slim",
+      "bandProfile": "flat",
+      "surfaceFinish": "engraved",
+      "diamondLayout": "none",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "quiet"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB044-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB044-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB044-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB044-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB044.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB045",
+    "family": "texture",
+    "title": "실버 샌드 엣지",
+    "description": "거친 무광 중앙과 매끈한 유광 모서리",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "wide",
+      "bandProfile": "beveled",
+      "surfaceFinish": "sandblast",
+      "diamondLayout": "none",
+      "motif": "edgeLine",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "mixedMode": "polishedEdges"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB045-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB045-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB045-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB045-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB045.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB046",
+    "family": "texture",
+    "title": "샴페인 헤어라인 포인트",
+    "description": "고운 세로 결 속에 작은 스톤 한 개",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "hairline",
+      "diamondLayout": "singleFlush",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB046-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB046-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB046-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB046-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB046.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB047",
+    "family": "texture",
+    "title": "옐로 밀그레인 매트",
+    "description": "무광 중심부와 밀그레인 테두리의 빈티지 조합",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "wide",
+      "bandProfile": "flat",
+      "surfaceFinish": "milgrain",
+      "diamondLayout": "none",
+      "motif": "edgeLine",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "secondaryFinish": "satin"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB047-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB047-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB047-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB047-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB047.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB048",
+    "family": "texture",
+    "title": "로즈 해머드 포인트",
+    "description": "불규칙한 표면 사이에 포인트 다이아 한 개",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "hammered",
+      "diamondLayout": "singleFlush",
+      "motif": "asymmetric",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB048-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB048-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB048-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB048-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB048.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB049",
+    "family": "twoTone",
+    "title": "실버 옐로 센터 스트라이프",
+    "description": "실버 밴드 중앙에 얇은 옐로골드 라인",
+    "attributes": {
+      "metalTone": "twoTone",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "centerGroove",
+      "colorLayout": "centerStripe",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": "yellow",
+      "baseTone": "silver"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB049-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB049-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB049-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB049-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB049.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB050",
+    "family": "twoTone",
+    "title": "샴페인 로즈 엣지 포인트",
+    "description": "샴페인 바탕과 로즈 엣지, 작은 포인트 스톤",
+    "attributes": {
+      "metalTone": "twoTone",
+      "bandWidth": "slim",
+      "bandProfile": "beveled",
+      "surfaceFinish": "polished",
+      "diamondLayout": "singleFlush",
+      "motif": "edgeLine",
+      "colorLayout": "edgeContrast",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": "rose",
+      "baseTone": "champagne"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB050-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB050-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB050-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB050-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB050.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB051",
+    "family": "twoTone",
+    "title": "실버 로즈 스플릿",
+    "description": "실버와 로즈가 비대칭으로 반씩 나뉜 밴드",
+    "attributes": {
+      "metalTone": "twoTone",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "asymmetric",
+      "colorLayout": "split",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": "rose",
+      "baseTone": "silver"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB051-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB051-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB051-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB051-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB051.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB052",
+    "family": "twoTone",
+    "title": "옐로 실버 채널 엣지",
+    "description": "옐로 중심과 실버 테두리 사이에 짧은 채널 세팅",
+    "attributes": {
+      "metalTone": "twoTone",
+      "bandWidth": "wide",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "channel",
+      "motif": "edgeLine",
+      "colorLayout": "edgeContrast",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": "silver",
+      "baseTone": "yellow",
+      "stoneCount": 6
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB052-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB052-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB052-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB052-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB052.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB053",
+    "family": "twoTone",
+    "title": "샴페인 실버 콘케이브",
+    "description": "오목한 실버 중앙과 샴페인 외곽의 조합",
+    "attributes": {
+      "metalTone": "twoTone",
+      "bandWidth": "medium",
+      "bandProfile": "concave",
+      "surfaceFinish": "mixed",
+      "diamondLayout": "none",
+      "motif": "centerGroove",
+      "colorLayout": "centerStripe",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": "silver",
+      "baseTone": "champagne"
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB053-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB053-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB053-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB053-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB053.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB054",
+    "family": "twoTone",
+    "title": "로즈 옐로 인터위브",
+    "description": "두 색의 가는 라인이 교차하고 한 줄만 파베",
+    "attributes": {
+      "metalTone": "twoTone",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "halfPave",
+      "motif": "twist",
+      "colorLayout": "interwoven",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": "yellow",
+      "baseTone": "rose",
+      "oneSidePave": true
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB054-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB054-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB054-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB054-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB054.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB055",
+    "family": "curve",
+    "title": "실버 슬림 V",
+    "description": "중앙이 아주 얕게 내려가는 슬림 V 밴드",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "vLine",
+      "colorLayout": "mono",
+      "boldness": "quiet"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB055-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB055-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB055-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB055-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB055.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB056",
+    "family": "curve",
+    "title": "샴페인 웨이브 포인트",
+    "description": "부드러운 곡선의 낮은 지점에 작은 스톤 한 개",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "satin",
+      "diamondLayout": "singleFlush",
+      "motif": "wave",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB056-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB056-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB056-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB056-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB056.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB057",
+    "family": "curve",
+    "title": "옐로 심플 트위스트",
+    "description": "두 가닥처럼 보이지만 낮고 매끈한 교차 밴드",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "none",
+      "motif": "twist",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB057-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB057-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB057-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB057-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB057.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB058",
+    "family": "curve",
+    "title": "로즈 V 스파클",
+    "description": "V자 중심을 따라 작은 스톤이 짧게 모임",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "polished",
+      "diamondLayout": "shortLine",
+      "motif": "vLine",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "stoneCount": 7
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB058-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB058-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB058-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB058-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB058.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB059",
+    "family": "curve",
+    "title": "실버 웨이브 파베",
+    "description": "두 곡선 중 한쪽만 파베로 반짝이는 디자인",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "halfPave",
+      "motif": "wave",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "oneSidePave": true
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB059-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB059-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB059-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB059-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB059.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB060",
+    "family": "curve",
+    "title": "샴페인 어시메트릭 커브",
+    "description": "한쪽이 높고 한쪽이 낮은 비대칭 유선형 밴드",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "wide",
+      "bandProfile": "beveled",
+      "surfaceFinish": "mixed",
+      "diamondLayout": "none",
+      "motif": "asymmetric",
+      "colorLayout": "mono",
+      "boldness": "bold"
+    },
+    "renderHints": {
+      "secondaryTone": null
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB060-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB060-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB060-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB060-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB060.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB061",
+    "family": "petiteCenter",
+    "title": "실버 미니 베젤",
+    "description": "작은 라운드 스톤을 낮은 베젤로 감싼 밴드",
+    "attributes": {
+      "metalTone": "silver",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "petiteCenter",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "centerStyle": "bezel",
+      "centerCarat": 0.15
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB061-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB061-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB061-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB061-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB061.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB062",
+    "family": "petiteCenter",
+    "title": "샴페인 플러시 센터",
+    "description": "밴드에 가깝게 내려앉은 낮은 센터 스톤",
+    "attributes": {
+      "metalTone": "champagne",
+      "bandWidth": "medium",
+      "bandProfile": "flat",
+      "surfaceFinish": "satin",
+      "diamondLayout": "petiteCenter",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "centerStyle": "flush",
+      "centerCarat": 0.2
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB062-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB062-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB062-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB062-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB062.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB063",
+    "family": "petiteCenter",
+    "title": "옐로 로우 프롱",
+    "description": "작은 센터 스톤을 낮은 프롱으로 세팅",
+    "attributes": {
+      "metalTone": "yellow",
+      "bandWidth": "medium",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "petiteCenter",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "balanced"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "centerStyle": "prong",
+      "centerCarat": 0.25
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB063-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB063-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB063-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB063-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB063.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  },
+  {
+    "id": "WB064",
+    "family": "petiteCenter",
+    "title": "로즈 미니 숄더",
+    "description": "작은 센터와 양옆의 아주 짧은 미세 스톤",
+    "attributes": {
+      "metalTone": "rose",
+      "bandWidth": "slim",
+      "bandProfile": "domed",
+      "surfaceFinish": "polished",
+      "diamondLayout": "petiteCenter",
+      "motif": "straight",
+      "colorLayout": "mono",
+      "boldness": "sparkly"
+    },
+    "renderHints": {
+      "secondaryTone": null,
+      "centerStyle": "prong",
+      "centerCarat": 0.2,
+      "shoulderStones": true
+    },
+    "partnerRule": "sameMotifWiderLessStone",
+    "enabled": true,
+    "assetVersion": 2,
+    "assets": {
+      "pack384": "/images/wedding-bands/v2/candidates/WB064-pack-384.webp",
+      "pack768": "/images/wedding-bands/v2/candidates/WB064-pack-768.webp",
+      "worn384": "/images/wedding-bands/v2/candidates/WB064-worn-384.webp",
+      "worn768": "/images/wedding-bands/v2/candidates/WB064-worn-768.webp",
+      "fallback": "/images/wedding-bands/v2/fallback/WB064.svg",
+      "detailCrop": {
+        "x": 0.5,
+        "y": 0.57,
+        "scale": 1.15
+      }
+    }
+  }
+]

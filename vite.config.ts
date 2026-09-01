@@ -1,13 +1,14 @@
-import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [react()],
-  build: { target: 'es2022' },
+  server: { host: '127.0.0.1', port: 4173 },
+  preview: { host: '127.0.0.1', port: 4173 },
+  build: { target: 'es2022', sourcemap: false },
   test: {
     environment: 'jsdom',
-    include: ['tests/unit/**/*.test.ts', 'tests/unit/**/*.test.tsx'],
-    setupFiles: ['./tests/unit/setup.ts'],
-    coverage: { reporter: ['text', 'json-summary'] }
-  }
+    setupFiles: './tests/unit/setup.ts',
+    include: ['tests/unit/**/*.test.ts'],
+  },
 });
