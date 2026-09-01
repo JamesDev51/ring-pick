@@ -30,3 +30,9 @@ npm run e2e
 ## 품질 게이트
 
 `npm run verify`는 ESLint, unit test, 306개 WebP와 89개 fallback 자산, 18개 통제 비교, TypeScript 및 production build를 검사합니다. Playwright는 Chromium 320/390/480px와 iPhone WebKit에서 핵심 사용자 흐름을 검증합니다.
+
+## PRD / 현재 완성 계획
+
+- [Ring Pick v2.1 — 100% 완성 PRD](docs/PRD_V2.1_100_PERCENT_COMPLETION.md)
+
+현재 기능·배포는 완료된 상태이며, v2.1 PRD는 **실사 웨딩밴드 이미지 153장 전면 교체, 진단 공정성 검수, 실제 사용자 5~10명 테스트, 최종 Production Release Gate**까지 남은 작업을 정의합니다.
