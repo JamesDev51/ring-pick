@@ -60,7 +60,7 @@ test.describe('Ring Pick v2 production-ready journey', () => {
     await auditShot(page, info, '03-personalized-tournament');
     for (let index = 0; index < 15; index += 1) await choose(page, index % 4 === 0 ? 'b' : 'a');
     await expect(page).toHaveURL(/\/result$/);
-    await expect(page.getByText('내 웨딩밴드 취향은')).toBeVisible();
+    await expect(page.locator('.result-hero .eyebrow')).toHaveText('내 웨딩밴드 취향은');
     await auditShot(page, info, '04-result-top');
     await auditShot(page, info, '05-result-full', true);
     await assertMobileQuality(page);
@@ -119,7 +119,7 @@ test.describe('Ring Pick v2 production-ready journey', () => {
     await auditShot(page, info, '03-personalized-tournament');
     for (let index = 0; index < 15; index += 1) await choose(page, index % 4 === 0 ? 'b' : 'a');
     await expect(page).toHaveURL(/\/result$/);
-    await expect(page.getByText('내 웨딩밴드 취향은')).toBeVisible();
+    await expect(page.locator('.result-hero .eyebrow')).toHaveText('내 웨딩밴드 취향은');
     await auditShot(page, info, '04-result-top');
     await auditShot(page, info, '05-result-full', true);
     await context.grantPermissions(['clipboard-read', 'clipboard-write']);
